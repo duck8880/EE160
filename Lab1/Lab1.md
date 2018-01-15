@@ -1,6 +1,6 @@
 # EE160 Lab 1
 
-（Repo of lab notes: https://github.com/duck8880/EE160）
+（Repo of lab notes: <https://github.com/duck8880/EE160>）
 
 ## Note
 
