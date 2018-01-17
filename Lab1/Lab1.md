@@ -1,5 +1,5 @@
 # EE160 Lab 1
-（Repo of lab notes: <https://github.com/duck8880/EE160>）
+(Repo of lab notes: <https://github.com/duck8880/EE160>)
 
 ## TA
 
@@ -7,8 +7,8 @@
 
 ## Lab time and location
 
-  Section 2: Thursdays at 7:30-10:15a, POST 214  
-  Office hours:  
+  - Section 2: Thursdays at 7:30-10:15a, POST 214  
+  - Office hours:  
     Wednesdays at 10:30-11:30a, POST 214  
     Thursdays at 10:15-11:15a, POST 214
 
