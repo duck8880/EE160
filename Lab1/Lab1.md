@@ -19,8 +19,25 @@
 - Use Wiliki account. Go to HOLM 250 if you have problem.
 - Attend every lab. If you have to miss a lab, contact the TA before lab for making up.
 - Sign risk form at <http://tinyurl.com/uhmee-riskform>
+- Join EE160 course in Piazza: <https://piazza.com/hawaii/spring2016/ee160>
 
 ## Self Introduction
 
   Name, Major, Year  
   Send me an email with your introduction and a face picture attached
+
+## Homework 0
+
+- Login to Wiliki account using **PuTTY** (for Windows)  
+
+  `Host Name: wiliki.eng.hawaii.edu`, `Port: 22`, `User name and password: Wiliki account`
+  
+- Set up environment (for new users to use csh)
+
+  `cd`  
+  `cp ~ee160/dotprofile_csh .profile`  
+  `logout`  
+  log back in to wiliki  
+  `cp ~ee160/dotcshrc .cshrc`
+  `source .cshrc`
+  `test160`
