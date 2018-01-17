@@ -60,6 +60,14 @@
   `cp ~ee160/info .`  
   `vi info`  
 
+- Useful vi commands
+
+  `a` or `Insert`: Enter **insert** mode
+  `Esc`: Quit **insert** mode
+  `:w`: Save changes to current file
+  `:q`: Quit vi without saving
+  `:wq`: Save changes and quit
+
 - Email **info** to Dr. Tep Dobry
 
   `elm`  
