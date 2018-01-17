@@ -28,7 +28,7 @@
   Name, Major, Year  
   Send me an email with your introduction and a face picture attached
 
-
+  
 
 ## Homework 0
 
@@ -39,13 +39,13 @@
 - Set up environment (for new users to use csh)
 
   `cd`  
-  `cp ~ee160/dotprofile_csh .profile`
+  `cp ~ee160/dotprofile_csh .profile`  
   `logout`  
   log back in to wiliki  
-  `cp ~ee160/dotcshrc .cshrc`
-  `source .cshrc`
-  `test160`
-  `mkdir EE160`
+  `cp ~ee160/dotcshrc .cshrc`  
+  `source .cshrc`  
+  `test160`  
+  `mkdir EE160`  
 
 - Complete the questionnaire at the following website, and write down your result.
 
@@ -53,15 +53,15 @@
 
 - Fill out the file **info**
 
-  `cd`
-  `cd EE160`
-  `cp ~ee160/info .`
-  `vi info`
+  `cd`  
+  `cd EE160`  
+  `cp ~ee160/info .`  
+  `vi info`  
 
 - Email it to Dr. Tep Dobry
 
-  `elm`
-  `elm -s "info for ee160" tep < info`
+  `elm`  
+  `elm -s "info for ee160" tep < info ` 
 
   ​
 
@@ -69,18 +69,18 @@
 
 - Explore Unix
 
-  - Navigating in the Unix file system
+  - Navigating in the Unix file system  
     `pwd`, `cd`, `ls`, `cat`, `more`
-  - Managing files and directories
+  - Managing files and directories  
     `mkdir`, `cp`, `mv`, `rm`
-  - Communicating with others
+  - Communicating with others  
     `w`, `who`, `finger`
 
 - Explore text editor: **vi**
 
 - Explore email
 
-  - Your email address on wiliki: `*username*@wiliki.eng.hawaii.edu`
+  - Your email address on wiliki: `*username*@wiliki.eng.hawaii.edu`  
     TA's email address on wiliki: `jianqiuc@wiliki.eng.hawaii.edu`
 
   - Send an email to the three classmates
@@ -88,7 +88,7 @@
   - Send an email to your TA telling him the names of the three classmates
 
 
-
+  
 
 ## Tutorial offering from the CoE
 
