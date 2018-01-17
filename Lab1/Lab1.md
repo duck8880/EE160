@@ -35,9 +35,15 @@
 - Set up environment (for new users to use csh)
 
   `cd`  
-  `cp ~ee160/dotprofile_csh .profile`  
+  `cp ~ee160/dotprofile_csh .profile`
   `logout`  
   log back in to wiliki  
   `cp ~ee160/dotcshrc .cshrc`
   `source .cshrc`
   `test160`
+  `mkdir EE160`
+  
+- Complete the questionnaire, fill out the file **info** and email it to Tep (Do them after Lab 1)
+
+## Unix/Linux Command Cheat Sheet
+<https://files.fosswire.com/2007/08/fwunixref.pdf>
