@@ -31,6 +31,7 @@
    
 
 ## Homework 0
+(<http://www-ee.eng.hawaii.edu/~tep/EE160/S18/Hw/hw0.html>)
 
 - Login to Wiliki account using **PuTTY** (for Windows)  
 
@@ -62,8 +63,8 @@
 
 - Useful vi commands
 
-  `a` or `Insert`: Enter **insert** mode  
-  `Esc`: Quit **insert** mode  
+  `a` or `Insert` key: Enter **insert** mode  
+  `Esc` key: Quit **insert** mode  
   `:w`: Save changes to current file  
   `:q`: Quit vi without saving  
   `:wq`: Save changes and quit  
@@ -77,6 +78,7 @@
   
 
 ## Lab 1
+(<http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab1/>)
 
 - Explore Unix
 
