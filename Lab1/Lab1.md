@@ -3,14 +3,21 @@
 
 ## TA
 
-  Jianqiu "Chris" Cao (jianqiuc@hawaii.edu)
+    Jianqiu "Chris" Cao (jianqiuc@hawaii.edu)
 
 ## Lab time and location
 
+<<<<<<< HEAD
   - Section 2: Thursdays at 7:30-10:15a, POST 214  
   - Office hours:  
     Wednesdays at 10:30-11:30a, POST 214  
     Thursdays at 10:15-11:15a, POST 214
+=======
+    Section 2: Thursdays at 7:30-10:15a, POST 214  
+    Office hours:  
+        Wednesdays at 10:30-11:30a, POST 214  
+        Thursdays at 10:15-11:15a, POST 214
+>>>>>>> 1b52bb89b8dcd2e765ddbf522b60f80588b4e991
 
 ## Note
 
