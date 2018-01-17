@@ -1,11 +1,11 @@
 # EE160 Lab 1
 (Repo of lab notes: <https://github.com/duck8880/EE160>)
 
+
+
 ## TA
 
   Jianqiu "Chris" Cao (jianqiuc@hawaii.edu)
-
-
 
 ## Lab time and location
 
@@ -26,9 +26,9 @@
 ## Self Introduction
 
   Name, Major, Year  
-  Send me an email with your introduction and a face picture attached
+  Send me an email with your introduction and a face picture attached  
 
-  
+   
 
 ## Homework 0
 
@@ -61,9 +61,10 @@
 - Email it to Dr. Tep Dobry
 
   `elm`  
-  `elm -s "info for ee160" tep < info ` 
+  `elm -s "info for ee160" tep < info `   
 
-  ​
+
+  
 
 ## Lab 1
 
@@ -85,7 +86,8 @@
 
   - Send an email to the three classmates
 
-  - Send an email to your TA telling him the names of the three classmates
+  - Send an email to your TA telling him the names of the three classmates  
+
 
 
   
