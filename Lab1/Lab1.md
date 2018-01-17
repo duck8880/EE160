@@ -95,7 +95,7 @@
   - Your email address on wiliki: `*username*@wiliki.eng.hawaii.edu`  
     TA's email address on wiliki: `jianqiuc@wiliki.eng.hawaii.edu`
 
-  - Send an email to the three classmates
+  - Send an email to three of your classmates
 
   - Send an email to your TA telling him the names of the three classmates  
 
