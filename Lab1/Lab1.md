@@ -36,7 +36,6 @@
 - Login to Wiliki account using **PuTTY** (for Windows)  
 
   `Host Name: wiliki.eng.hawaii.edu`, `Port: 22`,   
-
   `User name and password: Wiliki account`
 
 - Set up environment (for new users to use csh)
@@ -87,7 +86,7 @@
   - Managing files and directories  
     `mkdir`, `cp`, `mv`, `rm`
   - Communicating with others  
-    `w`, `who`, `finger`
+    `w`, `who`  
 
 - Explore text editor: **vi**
 
