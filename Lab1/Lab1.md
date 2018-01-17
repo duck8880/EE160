@@ -9,8 +9,8 @@
 
   Section 2: Thursdays at 7:30-10:15a, POST 214  
   Office hours:  
-    Wednesdays at 10:30-11:30a, POST 214  
-    Thursdays at 10:15-11:15a, POST 214
+      Wednesdays at 10:30-11:30a, POST 214  
+      Thursdays at 10:15-11:15a, POST 214
 
 ## Note
 
