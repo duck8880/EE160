@@ -34,7 +34,9 @@
 
 - Login to Wiliki account using **PuTTY** (for Windows)  
 
-  `Host Name: wiliki.eng.hawaii.edu`, `Port: 22`, `User name and password: Wiliki account`
+  `Host Name: wiliki.eng.hawaii.edu`, `Port: 22`,   
+
+  `User name and password: Wiliki account`
 
 - Set up environment (for new users to use csh)
 
@@ -58,7 +60,7 @@
   `cp ~ee160/info .`  
   `vi info`  
 
-- Email it to Dr. Tep Dobry
+- Email **info** to Dr. Tep Dobry
 
   `elm`  
   `elm -s "info for ee160" tep < info `   
