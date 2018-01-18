@@ -90,7 +90,7 @@
 
 - Explore email
 
-  - Your email address on wiliki: *`username`*`@wiliki.eng.hawaii.edu`  
+  - Your email address on wiliki: `your_user_name@wiliki.eng.hawaii.edu`  
     TA's email address on wiliki: `jianqiuc@wiliki.eng.hawaii.edu`
 
   - Send an email to three of your classmates
