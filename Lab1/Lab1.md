@@ -99,7 +99,7 @@
 
 - Explore text editor: **vi**
   
-  ·vimtutor·
+  `vimtutor`
 
   
 
