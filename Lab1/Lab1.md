@@ -1,4 +1,4 @@
-# EE160 Lab 1
+# EE160 Lab 1: Getting Familiar with wiliki
 (Repo of lab notes: <https://github.com/duck8880/EE160>)
 
 
@@ -90,7 +90,7 @@
 
 - Explore email
 
-  - Your email address on wiliki: `*username*@wiliki.eng.hawaii.edu`  
+  - Your email address on wiliki: *`username`*`@wiliki.eng.hawaii.edu`  
     TA's email address on wiliki: `jianqiuc@wiliki.eng.hawaii.edu`
 
   - Send an email to three of your classmates
