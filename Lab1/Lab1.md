@@ -110,3 +110,7 @@
 ## Unix/Linux Command Cheat Sheet
 
 <https://files.fosswire.com/2007/08/fwunixref.pdf>
+
+## Get access to wiliki off campus using UH VPN
+
+<http://www.hawaii.edu/askus/819>
