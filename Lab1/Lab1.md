@@ -67,6 +67,10 @@
 
   - Your email address on wiliki: `your_user_name@wiliki.eng.hawaii.edu`  
     TA's email address on wiliki: `jianqiuc@wiliki.eng.hawaii.edu`
+  
+  - Delete **.forward** in your home directory first  
+    `cd`  
+    `rm .forward`  
 
   - Send an email to three of your classmates
 
