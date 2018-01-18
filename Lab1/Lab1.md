@@ -29,9 +29,8 @@
   Send me an email with your introduction and a face picture attached  
 
    
-
-## Homework 0
-(<http://www-ee.eng.hawaii.edu/~tep/EE160/S18/Hw/hw0.html>)
+## Lab 1
+(<http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab1/>)
 
 - Login to Wiliki account using **PuTTY** (for Windows)  
 
@@ -48,36 +47,6 @@
   `source .cshrc`  
   `test160`  
   `mkdir EE160`  
-
-- Complete the questionnaire at the following website, and write down your result.
-
-  <http://www-ee.eng.hawaii.edu/~tep/ILS/ils.html> 
-
-- Fill out the file **info**
-
-  `cd`  
-  `cd EE160`  
-  `cp ~ee160/info .`  
-  `vi info`  
-
-- Useful vi commands
-
-  `a` or `Insert` key: Enter **insert** mode  
-  `Esc` key: Quit **insert** mode  
-  `:w`: Save changes to current file  
-  `:q!`: Quit vi without saving  
-  `:wq`: Save changes and quit  
-
-- Email **info** to Dr. Tep Dobry
-
-  `elm`  
-  `elm -s "info for ee160" tep < info `   
-
-
-  
-
-## Lab 1
-(<http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab1/>)
 
 - Explore Unix
 
@@ -102,6 +71,35 @@
   `vimtutor`
 
   
+## Homework 0
+(<http://www-ee.eng.hawaii.edu/~tep/EE160/S18/Hw/hw0.html>)
+
+- Complete the questionnaire at the following website, and write down your result.
+
+  <http://www-ee.eng.hawaii.edu/~tep/ILS/ils.html> 
+
+- Fill out the file **info**
+
+  `cd`  
+  `cd EE160`  
+  `cp ~ee160/info .`  
+  `vi info`  
+
+- Useful vi commands
+
+  `a` or `Insert` key: Enter **insert** mode  
+  `Esc` key: Quit **insert** mode  
+  `:w`: Save changes to current file  
+  `:q!`: Quit vi without saving  
+  `:wq`: Save changes and quit  
+
+- Email **info** to Dr. Tep Dobry
+
+  `elm`  
+  `elm -s "info for ee160" tep < info `   
+  
+
+
 
 ## Tutorial offering from the CoE
 
