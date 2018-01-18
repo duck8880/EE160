@@ -112,6 +112,7 @@
 - No Penalty for complete lab assignments turned in before the beginning of the next lab session.
 - 10% Penalty for complete lab assignments turned in before the beginning of the lab session 2 weeks after the scheduled lab session.
 - 50% penalty for lab assignments after that.
+- Homework 0 is due at the end of the lab 1 session
 
 
 
