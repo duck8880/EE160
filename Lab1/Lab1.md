@@ -70,7 +70,7 @@
 
   - Send an email to three of your classmates
 
-  - Send an email to your TA telling him the names of the three classmates  
+  - **Send an email to your TA telling him the names of the three classmates**  
 
 
 
@@ -83,7 +83,7 @@
 
   <http://www-ee.eng.hawaii.edu/~tep/ILS/ils.html> 
 
-- Fill out the file **info**
+- Fill out the file "**info**"
 
   `cd`  
   `cd EE160`  
@@ -98,7 +98,7 @@
   `:q!`: Quit vi without saving  
   `:wq`: Save changes and quit  
 
-- Email **info** to Dr. Tep Dobry
+- **Email the file "info" to Dr. Tep Dobry**
 
   `elm`  
   `elm -s "info for ee160" tep < info `   
