@@ -88,8 +88,6 @@
   - Communicating with others  
     `w`, `who`  
 
-- Explore text editor: **vi**
-
 - Explore email
 
   - Your email address on wiliki: `*username*@wiliki.eng.hawaii.edu`  
@@ -99,7 +97,9 @@
 
   - Send an email to your TA telling him the names of the three classmates  
 
-
+- Explore text editor: **vi**
+  
+  ·vimtutor·
 
   
 
