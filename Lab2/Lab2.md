@@ -9,8 +9,13 @@
 ## Note
 
 - Sign risk form at <http://tinyurl.com/uhmee-riskform> (**Please sign separately for EE160!**)
+<<<<<<< HEAD
   ​
 
+=======
+
+  ​
+>>>>>>> 70eab8236acca1291387c84deb2589fa0a38da25
 
 ## 1. Team Formation
 
@@ -22,6 +27,10 @@
 
 - Write up a list of 5 to 10 goals and expectations, and your team name. **Email it to Dr. Dobry, the TA and your team members.**
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 70eab8236acca1291387c84deb2589fa0a38da25
 
 
 
