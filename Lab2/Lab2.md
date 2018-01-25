@@ -10,7 +10,7 @@
 
 - Sign risk form at <http://tinyurl.com/uhmee-riskform> (**Please sign separately for EE160!**)
 
-
+  ​
 
 ## 1. Team Formation
 
@@ -22,7 +22,6 @@
 
 - Write up a list of 5 to 10 goals and expectations, and your team name. **Email it to Dr. Dobry, the TA and your team members.**
 
-  ​
 
 
 
@@ -55,10 +54,9 @@
   `gcc gravity.c`  
   `./a.out`  
 
-  ​
 
 
-## More practice with Unix
+## 3. More practice with Unix
 
 - In your EE160 directory, create a directory **Labs**
 
