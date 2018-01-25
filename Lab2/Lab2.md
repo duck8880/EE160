@@ -9,7 +9,7 @@
 ## Note
 
 - Sign risk form at <http://tinyurl.com/uhmee-riskform> (**Please sign separately for EE160!**)
-
+  ​
 
 
 ## 1. Team Formation
@@ -21,8 +21,6 @@
   <http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab2/teamex.html>
 
 - Write up a list of 5 to 10 goals and expectations, and your team name. **Email it to Dr. Dobry, the TA and your team members.**
-
-  ​
 
 
 
@@ -41,24 +39,31 @@
   `cp myname.c myinfo.c`  
   `vi myinfo.c`  
 
-  Tip: add a new line of "*printf()*" to print out your e-mail address
+  Hint: add a new line of "*printf()*" to print out your e-mail address
 
   `gcc myinfo.c`  
   `./a.out`
 
 - Enter the [pay0.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Code/Textbook/Chap2/pay0.c) program, fix the bugs and get it working. Change it to compute the pay for working 32 hours at a pay rate of $9.75
 
-- Copy gravity.c into your directory, fix the bugs. Compile and run the program.
+- Copy gravity.c into your directory, fix the bugs. Compile and run the program. **Check if the values in output are correct.**
 
   `cp ~ee160/Labs/Lab2/gravity.c .`  
   `vi gravity.c`  
   `gcc gravity.c`  
-  `./a.out`  
+  `./a.out`    
 
-  ​
+  Hint: In *printf()*, the **conversion specifier** must coincide with the type of the variable. e.g. :
+
+  ```c
+  int a;
+  float b;
+  printf("a = %d, b = %4.2f\n", a, b);
+  ```
 
 
-## More practice with Unix
+
+## 3. More practice with Unix
 
 - In your EE160 directory, create a directory **Labs**
 
