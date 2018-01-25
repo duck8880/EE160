@@ -20,7 +20,7 @@
 
   <http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab2/teamex.html>
 
-- Write up a list of 5 to 10 goals and expectations, and your team name. **Email it to Dr. Dobry, the TA and your team members.**
+- Write up a list of 5 to 10 goals and expectations, and your team name **in a file**. **Email it to Dr. Dobry, the TA and your team members.**
 
 
 
