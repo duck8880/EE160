@@ -37,6 +37,7 @@
 - Modify the program in [myname.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab2/myname.c) to print your full name.
 
 - Copy the program that prints your name into a new file named myinfo.c. Extend this program to also print out your complete e-mail address on a separate line after your name.
+
   `cp myname.c myinfo.c`  
   `vi myinfo.c`  
 
