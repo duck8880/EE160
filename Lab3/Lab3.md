@@ -1,4 +1,4 @@
-# EE160 Lab 2: Arithmetic Expressions and Program I/O
+# EE160 Lab 3: Arithmetic Expressions and Program I/O
 
 (Repo of lab notes: <https://github.com/duck8880/EE160>)
 
