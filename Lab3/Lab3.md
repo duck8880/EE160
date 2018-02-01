@@ -4,7 +4,7 @@
 
 (Lab assignment: <http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab3/lab3.html>)
 
-
+  ​
 
 
 ## Programs
@@ -72,7 +72,9 @@
   miles per gallon: 30.00
   ```
 
-- (2 Points) Write a program **temperature.c** to convert temperatures in degrees Fahrenheit to degrees Celsius. *C = (F - 32) * 5 / 9*.
+- (2 Points) Write a program **temperature.c** to convert temperatures in degrees Fahrenheit to degrees Celsius. 
+
+  *C = (F - 32) * 5 / 9*.
 
   Example input and output:  
 
@@ -81,7 +83,7 @@
   Temperature in degrees Celsius is: 26.67
   ```
 
-  ​
+
 
 
 ## Turn in
@@ -99,7 +101,7 @@
 - Try to eliminate all the warnings:  
 
   ```c
-  # include <stdio.h>
+  #include <stdio.h>
   int main(){
     int a;
     scanf("%d", &a);
