@@ -206,7 +206,7 @@
   Enter the stop temperature in degrees Fahrenheit: 50  
   ```
 
-  ​
+  
 
 
 - (2 Points) Write a program **account.c** to solve problem 15 in [section 3.9](http://ee.hawaii.edu/~tep/EE160/Book/chap3/section2.1.9.html#SECTION0019000000000000000).
@@ -215,9 +215,13 @@
 
   Output: the **accumulated value**.
 
-  Calculate the new accumulated value from the accumulated value in last year: 
+  ​
 
-  *acc_amount = acc_amount + acc_amount * annual_interest*
+  The equation for calculating the new accumulated value from the accumulated value in last year: 
+
+  ​    *acc_amount = acc_amount + acc_amount * annual_interest*
+
+  ​
 
   The program should process user input until the user enters **0** for the **initial amount**.
 
@@ -229,6 +233,7 @@
   ```c
   float calc_acc_amt(float acc_amount, float annual_interest, int years);
   ```
+
 
 
   Example input and output:  
@@ -245,7 +250,7 @@
   Enter initial amount: 0
   ```
 
-  ​
+  
 
 
 ## Turn in
