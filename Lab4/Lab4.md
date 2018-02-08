@@ -215,11 +215,9 @@
 
   Output: the **accumulated value**.
 
-
-  ​
-
   The program should process user input until the user enters **0** for the **initial amount**.
-
+  
+  ​
 
   Write the algorithms for **calc_acc_amt()** and **main()**, adding them to your **algorithms** file.
 
