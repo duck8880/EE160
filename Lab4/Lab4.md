@@ -4,7 +4,7 @@
 
 (Lab assignment: <http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab4/lab4.html>)
 
-  
+  ​
 
 ## Notes
 
@@ -53,14 +53,12 @@
   }
   ```
 
-  ​
-
 - Add comments to the code to document the program.
 
 - You can open multiple windows to login to wiliki. One for editing the source files, and another for running the programs.
 
 
-
+  ​
 
 ## Programs
 
@@ -137,6 +135,7 @@
   ​
 
   `cp ../Lab3/temperature.c .`  
+  `vi temperature.c`  
   `cc temperature.c`  
   `/.a.out`  
 
@@ -156,11 +155,8 @@
   Tips: Commands in VI to copy, cut paste, etc.:
 
   `v`: enter visual mode			`h`, `j`, `k`, `l`: move cursor	
-
   `0`: to the beginning of a line	`$`: to the end of a line
-
   `c`: cut		`y`: copy		`p`: paste	`cc` or `dd`: cut the current line		`yy`: copy the current line
-
   `u`: undo	`Ctrl`+`r`: redo
 
   ​
@@ -183,7 +179,6 @@
 
   Note: Before write any code, write the algorithms for the function **temptable()** and the driver **main()** **IN WORDS** in a text file called **algorithms**.  Refer to the algorithm description: <http://www-ee.eng.hawaii.edu/~tep/EE160/Notes/Basics/loop_count.html>
 
-  ​
 
 
   ``vi algorithms``  
@@ -193,7 +188,6 @@
   `cc temptbl.c`  
   `./a.out`
 
-​    
 
   Example input and output:  
 
@@ -208,27 +202,11 @@
   70.000000       21.111111
   75.000000       23.888889
   80.000000       26.666666
+  Enter the start temperature in degrees Fahrenheit: 50
+  Enter the stop temperature in degrees Fahrenheit: 50  
   ```
 
-
-- (2 Points) Write a program **gas.c** to compute some statistics on gas. 
-
-  Input: the **number of gallons used**, the **number of miles** since the last fill up. 
-
-  Output: the **number of gallons**, the **cost per gallon** ($3.12), the **cost of the fill-up**, **cost per mile**, and **miles per gallon** for the fill-up.
-
-
-  Example input and output:  
-
-  ```bash
-  Enter the number of gallons used: 10
-  Enter the number of miles: 300
-  The number of gallons used: 10.00
-  The cost per gallon: 3.12
-  The cost of the fill-up: 31.20
-  Cost per mile: 0.10
-  miles per gallon: 30.00
-  ```
+  ​
 
 
 - (2 Points) Write a program **account.c** to solve problem 15 in [section 3.9](http://ee.hawaii.edu/~tep/EE160/Book/chap3/section2.1.9.html#SECTION0019000000000000000).
@@ -243,7 +221,6 @@
 
   The program should process user input until the user enters **0** for the **initial amount**.
 
-  ​
 
   Write the algorithms for **calc_acc_amt()** and **main()**, adding them to your **algorithms** file.
 
@@ -253,7 +230,6 @@
   float calc_acc_amt(float acc_amount, float annual_interest, int years);
   ```
 
-  ​
 
   Example input and output:  
 
@@ -269,7 +245,7 @@
   Enter initial amount: 0
   ```
 
-
+  ​
 
 
 ## Turn in
@@ -280,7 +256,7 @@
   ` grade -lab4s2,ee160`  
 
 
-
+  ​
 
 
 
