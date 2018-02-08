@@ -230,7 +230,7 @@
   ```
 
 
-The equation for calculating the new accumulated value from the accumulated value in last year: 
+  The equation for calculating the new accumulated value from the accumulated value in last year: 
 
     *acc_amount = acc_amount + acc_amount * annual_interest*
 
