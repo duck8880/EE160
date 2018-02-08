@@ -70,7 +70,7 @@
 
   ​
 
-- (2 Points) Fix the bugs in [**countup.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab4/countup.c), which prints the integers 1 through 20 on separate lines and then stop.
+- (2 Points) **Simple Loops:** Fix the bugs in [**countup.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab4/countup.c), which prints the integers 1 through 20 on separate lines and then stop.
 
   Fix the bugs in [**countdown.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab4/countdown.c), which prints the integers 10 down through 1 on separate lines and then print "BLASTOFF".
 
@@ -121,7 +121,7 @@
 
   ​
 
-- (2 Points) Copy your **temperature.c** file from your **Lab3** directory into your **Lab4** directory. Modify the program to compute the conversion from Fahrenheit to Celsius in a function called **tocelsius()**. The prototype for this function is:
+- (2 Points) **Simple function:** Copy your **temperature.c** file from your **Lab3** directory into your **Lab4** directory. Modify the program to compute the conversion from Fahrenheit to Celsius in a function called **tocelsius()**. The prototype for this function is:
 
   ```c
   float tocelsius(float fahrenheit);
@@ -161,7 +161,7 @@
 
   ​
 
-- (2 Points) Copy your **temperature.c** file to a file called **temptbl.c**. Add another function to the file:
+- (2 Points) **More functions:** Copy your **temperature.c** file to a file called **temptbl.c**. Add another function to the file:
 
   ```c
   int temptable(float start, float stop);
