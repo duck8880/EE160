@@ -154,8 +154,8 @@
 
   Tips: Commands in VI to copy, cut paste, etc.:
 
-  `v`: enter visual mode			`h`, `j`, `k`, `l`: move cursor	
-  `0`: to the beginning of a line	`$`: to the end of a line
+  `v`: enter visual mode			`h`, `j`, `k`, `l`: move cursor  
+  `0`: to the beginning of a line	`$`: to the end of a line  
   `c`: cut		`y`: copy		`p`: paste	`cc` or `dd`: cut the current line		`yy`: copy the current line
   `u`: undo	`Ctrl`+`r`: redo
 
@@ -177,7 +177,7 @@
 
   The function, **temptable()**, should use your function, **tocelsius()**. Modify the driver, **main()**, to prompt the user to enter the start and stop temperatures and print the table, until the user enters the same value for start and stop. 
 
-  Note: Before write any code, write the algorithms for the function **temptable()** and the driver **main()** **IN WORDS** in a text file called **algorithms**.  Refer to the algorithm description: <http://www-ee.eng.hawaii.edu/~tep/EE160/Notes/Basics/loop_count.html>
+  Note: Before write any code, write the algorithms for the function **temptable()** and the driver **main()** **IN WORDS** in a text file called **algorithms**(2 points).  Refer to the algorithm description: <http://www-ee.eng.hawaii.edu/~tep/EE160/Notes/Basics/loop_count.html>
 
 
 
@@ -215,11 +215,6 @@
 
   Output: the **accumulated value**.
 
-  ​
-
-  The equation for calculating the new accumulated value from the accumulated value in last year: 
-
-  ​    *acc_amount = acc_amount + acc_amount * annual_interest*
 
   ​
 
@@ -235,6 +230,11 @@
   ```
 
 
+The equation for calculating the new accumulated value from the accumulated value in last year: 
+
+    *acc_amount = acc_amount + acc_amount * annual_interest*
+
+  ​
 
   Example input and output:  
 
