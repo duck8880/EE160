@@ -23,3 +23,13 @@
   - __Input__: a set of numbers; __Output__: the sum of the numbers. 
   
   - You should terminate the input with the end-of-file character("`Ctrl-D`").
+  
+  example output:
+  ```bash
+  Enter a number: 10
+  Enter a number: 20
+  Enter a number: 30.5
+  Enter a number:
+  The sum of the numbers is: 60.50
+  jianqiuc@wiliki.eng.hawaii.edu [85]%
+  ```
