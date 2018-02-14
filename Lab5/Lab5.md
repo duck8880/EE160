@@ -10,6 +10,20 @@
 
 - Eliminate all the warnings, or there will be deduction on your points. 
 
+  Example:  
+
+  ```c
+  #include <stdio.h>
+  int main(){
+    int a;
+    float b = 1.0;
+    
+    printf("Enter a: ");
+    scanf("%d", &a);
+    printf("a = %d, b = %f\n", a, b);
+  }
+  ```
+
 - Write your algorithms in the comments in your .c files
 
   ​
@@ -24,7 +38,24 @@
   
   - You should terminate the input with the end-of-file character(`[Ctrl-D]`).
   
-  example output:
+  Example code:
+  ```c
+  #include <stdio.h>
+  int main() {
+      //...
+      int flag;
+      flag = scanf("%d", &number);
+      //...
+      while( flag != EOF ){
+          //...
+          flag = scanf("%d", &number);
+         //...
+      }
+      //...
+  }
+  ```
+  
+  Example output:
   ```bash
   Enter a number: 10
   Enter a number: 20
