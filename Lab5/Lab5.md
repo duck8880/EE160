@@ -82,7 +82,7 @@
 
 - (2 Points). Copy the **avg.c** program into **weight.c** and modify it to read and compute a weighted average.
 
-  *weighted average = Σ value / Σ weight*
+  *weighted average = Σ weighted value / Σ weight = Σ (weighted value * weight) / Σ weight*
 
   Example input and output:
 
