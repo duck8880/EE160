@@ -182,10 +182,10 @@
     ```
 
   Hints: 
-  - The trick is how you get the values you pass to the function **calc_acc_amt()**. Think about what the MEANING of the parameters are.  
-  - Convert the **annual interest rate** to **monthly** or **daily interest rates** if user chooses **monthly** or **daily compounding**.  
-  - Call **calc_acc_amt()** passing the **annual/monthly/daily innterest rates** to the argument **annual_interest** and the **number of years/months/days** to the argument **years**.  
-  - Although the arguments in **calc_acc_amt()** are defined by years, you'll get the correct result as we care about the algorithm (equation) rather than the name. 
+  - The trick is how you get the values you pass to the function **calc_acc_amt()**. Think about what the MEANING of the parameters are.
+  - Convert the **annual interest rate** to **monthly** or **daily interest rates** if user chooses **monthly** or **daily compounding**.  
+  - Call **calc_acc_amt()** passing the **annual/monthly/daily innterest rates** to the argument **annual_interest** and the **number of years/months/days** to the argument **years**.
+  - Although the arguments in **calc_acc_amt()** are defined by years, you'll get the correct result as we care about the algorithm (equation) rather than the name. 
 
   Example input and output:
 
