@@ -167,7 +167,7 @@
 
   - Input: the **initial amount**, annual **interest rate** (e.g. 0.05 for 5%), 
 
-  - Prompt for either **annually (1), monthly (2) or daily (3) compounding**, and input the **number of years, months or days** correspondingly.
+  - Prompt for either **annual (1), monthly (2) or daily (3) compounding**, and input the **number of years, months or days** correspondingly.
 
   - Output: the **accumulated value**.
 
@@ -181,7 +181,11 @@
     #define DAILY		3
     ```
 
-  Hint: the trick is how you get the values you pass to the function calc_acc_amt(). Think about what the MEANING of the parameters are.
+  Hints: 
+  - The trick is how you get the values you pass to the function **calc_acc_amt()**. Think about what the MEANING of the parameters are.  
+  - Convert the **annual interest rate** to **monthly** or **daily interest rates** if user chooses **monthly** or **daily compounding**.  
+  - Call **calc_acc_amt()** passing the **annual/monthly/daily innterest rates** to the argument **annual_interest** and the **number of years/months/days** to the argument **years**.  
+  - Although the arguments in **calc_acc_amt()** are defined by years, you'll get the correct result as we care about the algorithm (equation) rather than the name. 
 
   Example input and output:
 
