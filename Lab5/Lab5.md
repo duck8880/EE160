@@ -116,8 +116,8 @@
 
   New program needs to implement the followings (difference from the program in lab 4):
 
-  - Step specified by argument in temptable() function. 
-  - Check the arguments to get rid of invalid inputs in temptable() function:
+  - Step specified by argument in the **temptable()** function. 
+  - Check the arguments to get rid of invalid inputs in the **temptable()** function:
     - If start < stop, then print from low to high. If start > stop, then print from high to low. 
     - if -0.001 < step < 0.001, print error message "No table--step smaller than 0.001!" rather than the table.
     - if step < 0, then step = -step.
