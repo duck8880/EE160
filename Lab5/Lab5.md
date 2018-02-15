@@ -161,7 +161,7 @@
   Enter start, stop and step:[Ctrl-D]
   ```
 
-- (2 Points) Write a program **account.c** to solve problem 16 in [section 3.9](http://ee.hawaii.edu/~tep/EE160/Book/chap3/section2.1.9.html#SECTION0019000000000000000). Copy your account.c file from your Lab4 directory into your Lab5 directory. 
+- (2 Points) Modify the program **account.c** in **Lab4** to solve **problem 16** in [section 3.9](http://ee.hawaii.edu/~tep/EE160/Book/chap3/section2.1.9.html#SECTION0019000000000000000). Copy your account.c file from your **Lab4** directory into your **Lab5** directory. 
 
   Requirement: 
 
