@@ -166,7 +166,7 @@
 
 - (2 Points). Do **problem 18** in [section 3.9](http://www-ee.eng.hawaii.edu/~tep/EE160/Book/chap3/section2.1.9.html) of the text.  
 
-  Write a function, `float pos_power(float base, int exponent);` which returns the value of base raised to a positive exponent. If the exponent is negative, the function should return 0. Put your function **pos_power()** in the file **exponent.c** and the prototype in the file **exponent.h**.
+  Write a function, `float pos_power(float base, int exponent);` which returns the value of base raised to a positive exponent. **If the exponent is negative, the function should return 0**. Put your function **pos_power()** in the file **exponent.c** and the prototype in the file **exponent.h**.
 
   Print debug information to show the argument passed into the function **pos_power()**:
 
