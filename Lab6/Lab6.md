@@ -140,13 +140,20 @@
   Example input and output without debug information:
 
   ```bash
+  Enter numbers n:
   23.5
+  debug: Max: 23.50, Min: 23.50
   16.1
+  debug: Max: 23.50, Min: 16.10
   -35.2
+  debug: Max: 23.50, Min: -35.20
   90
+  debug: Max: 90.00, Min: -35.20
   -13.1
+  debug: Max: 90.00, Min: -35.20
   0
-  The maximum is 90.0 and minimum is -35.2
+  The maximum is 90.00 and minimum is -35.20
+
   ```
 
   Use **debug statements** (with conditional compilation) to show that the maximum and minimum are being updated correctly with each input number. **Turn debugging off when you turn in your program.**
