@@ -124,6 +124,16 @@
   ```bash
   cc driver1.c maxmin.c
   ```
+  
+  Example input and output:
+  ```bash
+  Enter 2 numbers n1 n2: 10 20
+  Max: 20.000000, Min: 10.000000
+  Enter 2 numbers n1 n2: 30 40
+  Max: 40.000000, Min: 30.000000
+  Enter 2 numbers n1 n2:[Ctrl-D]
+  ```
+  
 
 - (3 Points). Use the same **maxmin.c** file from above for this program. Write a new driver **main()** in the file **driver2.c** which reads numbers one at a time, and keeps track of the biggest and smallest number seen so far. Use your functions **max()** and **min()** to do the comparisons. Finally print the maximum and minimum of the bunch of numbers. Use **0** to end the test input.
 
