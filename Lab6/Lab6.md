@@ -137,7 +137,7 @@
 
 - (3 Points). Use the same **maxmin.c** file from above for this program. Write a new driver **main()** in the file **driver2.c** which reads numbers one at a time, and keeps track of the biggest and smallest number seen so far. Use your functions **max()** and **min()** to do the comparisons. Finally print the maximum and minimum of the bunch of numbers. Use **0** to end the test input.
 
-  Example input and output without debug information:
+  Example input and output with debug information:
 
   ```bash
   Enter numbers n:
@@ -190,7 +190,33 @@
   ```bash
   cc driver3.c exponent.c
   ```
+  
+  Example input and output with debug information:
 
+  ```bash
+  Enter base and exponent:2 3
+  debug:Enter pos_power: base = 2.000000 exponent = 3
+  debug:Exit pos_power: result = 8.000000
+  The power is: 8.000000  
+  ```
+  ```bash
+  Enter base and exponent:1.5 2
+  debug:Enter pos_power: base = 1.500000 exponent = 2
+  debug:Exit pos_power: result = 2.250000
+  The power is: 2.250000
+  ```
+  ```bash
+  Enter base and exponent:2 0
+  debug:Enter pos_power: base = 2.000000 exponent = 0
+  debug:Exit pos_power: result = 1.000000
+  The power is: 1.000000
+  ```
+  ```bash
+  Enter base and exponent:2 -1
+  debug:Enter pos_power: base = 2.000000 exponent = -1
+  debug:Exit pos_power: result = 0.000000
+  The power is: 0.000000
+  ```
   ​
 
 
