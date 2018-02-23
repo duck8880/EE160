@@ -55,7 +55,7 @@
 
     `v`: enter visual mode;    `h`, `j`, `k`, `l`: move cursor  
     `0`: to the beginning of a line;    `$`: to the end of a line  
-    `c`: cut;    `y`: copy;    `p`: paste;    `cc` or `dd`: cut the current line;    `yy`: copy the current line
+    `c`: cut;    `y`: copy;    `p`: paste;    `cc` or `dd`: cut the current line;    `yy`: copy the current line  
     `u`: undo;    `Ctrl`+`r`: redo
 
   ​
@@ -66,7 +66,7 @@
 
 - (3 Points). Do **problem 4** in [section 2.9](http://www-ee.eng.hawaii.edu/~tep/EE160/Book/chap2/section2.1.9.html) of the text.   
 
-  Write a program *numbers.c* that reads a set of integers until a zero is entered. Excluding zero, the program should print a **count** of and a **sum** of:
+  Write a program **numbers.c** that reads a set of integers until a zero is entered. Excluding zero, the program should print a **count** of and a **sum** of:
 
   1. positive numbers (e.g. 15, 2)
   2. negative numbers (e.g. -3, -8)
