@@ -16,13 +16,13 @@
   #include <stdio.h>
   float avg(int a, int b, int c);
   int main(){
-    int a, b, c;
-    float d;
-    
-    printf("Enter a b c: ");
-    scanf("%d %d %d", &a, &b, &c);
-    d = avg(a, b, c);  
-    printf("Average: %f\n", %d);
+      int a, b, c;
+      float d;
+      
+      printf("Enter a b c: ");
+      scanf("%d %d %d", &a, &b, &c);
+      d = avg(a, b, c);  
+      printf("Average: %f\n", %d);
   }
   float avg(int a, int b, int c){
       float d;
@@ -32,7 +32,7 @@
   ```
 
 - Use conditional compilation to debug
-
+  
    ```c
    #define DEBUG
    ...
@@ -42,7 +42,43 @@
    #endif
    }
    ```
-
+ 
+- Separate compilation for multiple source files  
+  
+   **func.c**: (function definitions)
+   ```c
+   int func1(int arg1, int arg2){
+       ...
+   }
+   float func2(int arg1, int arg2){
+       ...
+   }
+   ```
+  
+  **func.h**: (prototypes of the functions defined in **func.c**)
+  ```c
+  int func1(int arg1, int arg2);
+  float func2(int arg1, int arg2);
+  ```
+  
+  **driver.c**: (include the **func.h** and make function calls)
+  ```c
+  include "func.h"
+  int main(){
+      int arg1, arg2, ret1;
+      float arg3, arg3, ret2;
+      ...
+      ret1 = func1(arg1, arg2);
+      ret2 = func2(arg3, arg4);
+      ...
+  }
+  ```
+  
+  To compile: (write only the .c files in the command line)
+  ```bash
+  cc driver.c func.c
+  ```
+  
 - Check your grades:
 
    `mygrades ee160s2`
