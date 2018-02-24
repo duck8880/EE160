@@ -43,17 +43,17 @@
    }
    ```
  
-- Separate compilation for multiple source files  
+- Separate compilation for multiple source files
   
-   **func.c**: (function definitions)
-   ```c
-   int func1(int arg1, int arg2){
-       ...
-   }
-   float func2(int arg1, int arg2){
-       ...
-   }
-   ```
+  **func.c**: (function definitions)
+  ```c
+  int func1(int arg1, int arg2){
+      ...
+  }
+  float func2(int arg1, int arg2){
+      ...
+  }
+  ```
   
   **func.h**: (prototypes of the functions defined in **func.c**)
   ```c
