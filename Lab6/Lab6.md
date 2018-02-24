@@ -42,43 +42,49 @@
    #endif
    }
    ```
- 
+
 - Separate compilation for multiple source files
-  
-  **func.c**: (function definitions)
-  ```c
-  int func1(int arg1, int arg2){
-      ...
-  }
-  float func2(int arg1, int arg2){
-      ...
-  }
-  ```
-  
-  **func.h**: (prototypes of the functions defined in **func.c**)
-  ```c
-  int func1(int arg1, int arg2);
-  float func2(int arg1, int arg2);
-  ```
-  
-  **driver.c**: (include the **func.h** and make function calls)
-  ```c
-  include "func.h"
-  int main(){
-      int arg1, arg2, ret1;
-      float arg3, arg3, ret2;
-      ...
-      ret1 = func1(arg1, arg2);
-      ret2 = func2(arg3, arg4);
-      ...
-  }
-  ```
-  
-  To compile: (write only the .c files in the command line)
-  ```bash
-  cc driver.c func.c
-  ```
-  
+
+   **func.c**: (function definitions)
+
+   ```c
+   int func1(int arg1, int arg2){
+       ...
+   }
+   float func2(int arg1, int arg2){
+       ...
+   }
+   ```
+
+   **func.h**: (prototypes of the functions defined in **func.c**)
+
+   ```c
+   int func1(int arg1, int arg2);
+   float func2(int arg1, int arg2);
+   ```
+
+   **driver.c**: (include the **func.h** and make function calls)
+
+   ```c
+   #include "func.h"
+   int main(){
+       int arg1, arg2, ret1;
+       float arg3, arg3, ret2;
+       ...
+       ret1 = func1(arg1, arg2);
+       ret2 = func2(arg3, arg4);
+       ...
+   }
+   ```
+
+   To compile: (write only the .c files in the command line)
+
+   ```bash
+   cc driver.c func.c
+   ```
+
+- **Write your algorithms as comments in your .c files.**
+
 - Check your grades:
 
    `mygrades ee160s2`
@@ -160,7 +166,7 @@
   ```bash
   cc driver1.c maxmin.c
   ```
-  
+
   Example input and output:
   ```bash
   Enter 2 numbers n1 n2: 10 20
@@ -169,7 +175,6 @@
   Max: 40.000000, Min: 30.000000
   Enter 2 numbers n1 n2:[Ctrl-D]
   ```
-  
 
 - (3 Points). Use the same **maxmin.c** file from above for this program. Write a new driver **main()** in the file **driver2.c** which reads numbers one at a time, and keeps track of the biggest and smallest number seen so far. Use your functions **max()** and **min()** to do the comparisons. Finally print the maximum and minimum of the bunch of numbers. Use **0** to end the test input.
 
@@ -226,7 +231,7 @@
   ```bash
   cc driver3.c exponent.c
   ```
-  
+
   Example input and output with debug information:
 
   ```bash
