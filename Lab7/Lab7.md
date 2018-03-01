@@ -4,7 +4,7 @@
 
 (Homework 2: <http://www-ee.eng.hawaii.edu/~tep/EE160/S18/Hw/Hw2/hw2.html>)
 
-  
+     ​
 
 ## Notes
 
@@ -45,8 +45,7 @@
     `u`: undo;    `Ctrl`+`r`: redo
 
 
-
-
+​     
 
 
 ## Introduction
