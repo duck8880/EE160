@@ -244,7 +244,7 @@
 
 - **Each member of the team** should send Dr. Dobry a confidential form evaluating the effort of **each member of the team**, **INCLUDING YOURSLEF**, using the ratings shown on the [rating page](http://www-ee.eng.hawaii.edu/~tep/EE160/eval.html) and use the form you copy from ~ee160/eval.  
 
-  The possible rating include: Excellent, Very Good, Satisfactory, Ordinary, Marginal, Deficient, Unsatisfactory, Superficial, No Show.  
+  The possible ratings include: Excellent, Very Good, Satisfactory, Ordinary, Marginal, Deficient, Unsatisfactory, Superficial, No Show.  
 
   Include a **description** at the end of the form of what parts of the programs where done by **each member of the team**, including yourself, and an assessment of how teamwork was used to complete this assignment.
 
