@@ -85,7 +85,7 @@
 
 - Make your program robust (i.e. how well they can tolerate user errors). 
 
-- You can debugging printf() to show some intermediate value in your program, as well as the Conditional Compilation (using #ifdef). Turn off the debugging before submission.  
+- You can use debugging printf() to show some intermediate value and other information in your program, as well as use the Conditional Compilation (using #ifdef). Turn off the debugging before submission.  
 
 
 
