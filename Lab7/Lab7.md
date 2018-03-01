@@ -10,11 +10,11 @@
 
 - Common mistakes
 
-  - If you want to test two or more conditions, use ""**&&**"" or "**||**" in **while()** statement: 
+  - If you want to test two or more conditions, use ""**&&**"" or "**||**" in **while()** or **if()** statement: 
 
     ```c
     while(a >= 0 && a <= 10) { ... }
-    while(b == 0 && b == 1) { ... }
+    if (b == 0 || b == 1) { ... }
     ```
 
   - Pay attention to variable types in expressions: 
