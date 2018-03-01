@@ -148,7 +148,7 @@
 
      which is given a month and year and returns the number of days in that month. You should use your **is_leap()** function as needed to determine the number of days in the month (February has an extra day in leap years). 
 
-     Put the code for the function **days_in_month() **in the file **days.c**, and the prototype in the file **days.h**.
+     Put the code for the function **days_in_month()** in the file **days.c**, and the prototype in the file **days.h**.
 
      Tips: Check invalid input (e.g. month < 1 or month > 12). The function can return -1 to indicate the invalid input.
 
@@ -190,8 +190,8 @@
 
      Tips: 
 
-     - Check invalid input (e.g. month < 1 or month > 12, or day > total number of days in the current month). The function can return -1 to indicate the invalid input.
-     - Use loop to calculate the sum of the days in the previous months. Then return the sum plus the day in the input.
+     - Check invalid input (e.g. month < 1 or month > 12, or day > total number of days in the current month). You can use **days_in_month()** to check the invalid month if you've already implemented the checking inside that function. The function can return -1 to indicate the invalid input.
+     - Use loop to calculate the sum of the number of days in the previous months. Then return the sum plus the day in the input.
 
    - Write a driver, **main()**, which asks the user to enter a month, day, year and prints the Julian date. **Terminate with EOF**. Put the driver in the file **driver3.c**.
 
@@ -221,11 +221,53 @@
 
 4. **Date Difference** (7 Points).
 
-   - Write just one more driver using the functions you have written so far. The driver is to read a start date and end date and compute the number of days between them. Terminate the program when **EOF** occurs when reading the start date. Implement your algorithm in main() in the file **datediff.c**. 
+   - Write just one more driver using the functions you have written so far. The driver is to read a start date and end date and compute the number of days between them. Terminate the program when **EOF** occurs when reading the start date. Implement your algorithm in main() in the file **datediff.c**.  
+     
+     Tips:
+       
+       - *date_diff = julian_date(end_date) + total number of days in the years from the start_year to the (end_year - 1) - julian_date(start_date);*
+          
+         e.g. : Start date: 10 1 2016, End date: 1 2 2018, date_diff = 32 + 366 + 365 - 10 = 753
+         
+         You can calculate the total number of days in one year using julian_date(31, 12, year).
+         
+       - If the end date is earlier than the start date, we can accept the input but swap the two dates.
+     
    - Compile this program with the command, which will create an executable called **datediff**:
 
      ```bash
      make datediff
+     ```
+     
+     Example run: 
+     
+     ```bash
+     Enter a start date (dd mm yy): 1 1 2018
+     Enter a ending date (dd mm yy): 1 2 2018
+             From    1       1       2018
+             To      1       2       2018
+                     there are 31 days
+     Enter a start date (dd mm yy): 10 1 2017
+     Enter a ending date (dd mm yy): 20 1 2018
+             From    10      1       2017
+             To      20      1       2018
+                     there are 375 days
+     Enter a start date (dd mm yy): 20 1 2018
+     Enter a ending date (dd mm yy): 10 1 2017
+             From    20      1       2018
+             To      10      1       2017
+                     there are 375 days
+     Enter a start date (dd mm yy): 1 1 2016
+     Enter a ending date (dd mm yy): 1 2 2018
+             From    1       1       2016
+             To      1       2       2017
+                     there are 762 days
+     Enter a start date (dd mm yy): 1 13 2018
+     Enter a ending date (dd mm yy): 1 1 2018
+             From    1       13      2018
+             To      1       1       2018
+     Invalid input!
+     Enter a start date (dd mm yy): [Ctrl-D]
      ```
 
    ​
