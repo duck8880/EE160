@@ -280,7 +280,7 @@
 
    ​
 
-## Useful VI commands to copy, cut, paste and etc.
+## Useful VI commands to copy, cut, paste, etc.
 
     `v`: enter visual mode;    `h`, `j`, `k`, `l`: move cursor  
     `0`: to the beginning of a line;    `$`: to the end of a line  
