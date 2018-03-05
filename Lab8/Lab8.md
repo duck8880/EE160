@@ -282,10 +282,10 @@
 
 ## Useful VI commands to copy, cut, paste, etc.
 
-    `v`: enter visual mode;    `h`, `j`, `k`, `l`: move cursor  
-    `0`: to the beginning of a line;    `$`: to the end of a line  
-    `c`: cut;    `y`: copy;    `p`: paste;    `cc` or `dd`: cut the current line;    `yy`: copy the current line  
-    `u`: undo;    `Ctrl`+`r`: redo
+  `v`: enter visual mode;    `h`, `j`, `k`, `l`: move cursor  
+  `0`: to the beginning of a line;    `$`: to the end of a line  
+  `c`: cut;    `y`: copy;    `p`: paste;    `cc` or `dd`: cut the current line;    `yy`: copy the current line  
+  `u`: undo;    `Ctrl`+`r`: redo
 
 ## Tutorial offering from the CoE
 
