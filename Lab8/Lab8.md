@@ -36,21 +36,21 @@
      }
      ```
 
-  - Symbolic link
+- Symbolic link
 
-     A symbolic link is similar to a "shortcut" in Windows. It's a file that contains a reference to another file or directory.
+   A symbolic link is similar to a "shortcut" in Windows. It's a file that contains a reference to another file or directory.
 
-     We can create a symbolic link in the current directory to a file in another directory using:
+   We can create a symbolic link in the current directory to a file in another directory using:
 
-     ```bash
-     ln -f -s /inst/ee/ee160/ee160/Code.lect/Roman/roman.c .
-     ```
+   ```bash
+   ln -f -s /inst/ee/ee160/ee160/Code.lect/Roman/roman.c .
+   ```
 
-     We can remove a symbolic link roman.c using:
+   We can remove a symbolic link roman.c using:
 
-     ```bash
-     unlink roman.c
-     ```
+   ```bash
+   unlink roman.c
+   ```
 
 
 
