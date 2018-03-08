@@ -91,7 +91,7 @@
 
 ## Tasks
 
-- Create a new directory **`EE160/Labs/Lab8`** as your working directory.
+- (5 Points). Create a new directory **`EE160/Labs/Lab8`** as your working directory.
 
   Copy `~ee160/Code.lect/Roman/makefile` to your working directory.
 
