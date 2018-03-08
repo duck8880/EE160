@@ -101,7 +101,8 @@
 
   Tasks: 
 
-  - We would like the program to be tolerant of white space (spaces and tabs, and still provide the result if all of the other characters are valid roman digits.
+  - We would like the program to be tolerant of white space (spaces and tabs), and still provide the result if all of the other characters are valid roman digits.
+  
   - If the user enters invalid characters, we would like the function to return 0 as a special value indicating an error instead of a partial result so far.  The driver should **print an error message** when this occurs and let the user try entering another number. 
 
   Hints:
@@ -115,9 +116,12 @@
     vi roman.c
     ```
 
-  - In **roman.c**, we need to add some code for detecting **spaces**(' '), **tabs**(''\t') and **newlines**('\n').
+  - In **roman.c**, we need to add some code for detecting **spaces**(' '), **tabs**(''\t') in the while loop.
 
-    If we detect invalid character, we need to flush all the following character until the newline character and then return 0. Here is the code for flush the buffer:
+    There may be three situations that the new value of rdigit makes the while loop terminates:
+    1. If the *rdigit* is EOF, we return EOF.
+    2. If the *rdight* is newline('\n'), which means that all the charaters in the input are valid roman numeral except spaces and tabs, we will return the number.
+    3. Otherwise, the *rdight* should be an invalid character, and we need to flush all the following character until the newline character and then return 0. Here is the code for flush the buffer:
 
     ```c
     while(getchar()!='\n');
@@ -146,7 +150,7 @@
 
   Sample run:
 
-  ```dash
+  ```bash
   a
   The command is: a
   [Space][Space]a
@@ -160,9 +164,9 @@
 
   1. Document **readcmd.c** with comments for the algorithm or for the functions.
 
-  2. Copy the program into **myreadcmd.c**, and extend this file to ignores leading **tabs** ('\t')as well as leading **blanks**(' ') (or any combinations of blanks and tabs). 
+  2. Copy the program into **myreadcmd.c**, and extend this file to ignores leading **tabs** ('\t') as well as leading **blanks**(' ') (or any combinations of blanks and tabs). 
 
-     Extend the program to have either a **semi-colon**(';') or a **newline**('\n') character indicate the end of a command. 
+     Also, extend the program to have either a **semi-colon**(';') or a **newline**('\n') character indicate the end of a command. 
 
      Sample run:
 
@@ -177,7 +181,13 @@
 
   3. Extend the program to verify that the command is an **upper** or **lower case** letter. It should print an error message if it isn't. Also, verify that the line has a command: if it hits a blank or ; without an intervening command, you should print an error. 
 
-     Hint: If we get a delimiter (";" or newline) from the skipBlanks(), it means there is missing command before the delimiter, then we need to call skipBlanks() again for finding the next command with out calling the skipOverRestOfCommand() beforehand. 
+     Hint: 
+     
+       There are three situations for the return value of skipBlanks() (cmd):
+     
+       1. If the "*cmd*" is a upper or lower case letter, then we will print out the letter, and call the `skipOverRestOfCommand()` followed by the `cmd = skipBlanks()`; 
+       2. If the "*cmd*" is a delimiter (";" or newline), it means there is missing command before the delimiter, then we need to print an error message, but dont't call `skipOverRestOfCommand()` before calling `cmd = skipBlanks()` for finding the next command; 
+       3. Otherwise, the "*cmd*" should be a non-letter charater, then we will print an error, and call the `skipOverRestOfCommand()` followed by the `cmd = skipBlanks()`.
 
      Sample run:
 
