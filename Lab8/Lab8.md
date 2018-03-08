@@ -83,8 +83,10 @@
           rm roman
   ```
 
-  ​
-
+- You can see more details about **char** and **ASCII** code in the following lecture notes.
+ 
+  <http://www-ee.eng.hawaii.edu/cgi-local/mklec.cgi?23+1+EE160/S18>
+  <http://www-ee.eng.hawaii.edu/~tep/EE160/Notes/Chars/char_rep.html>
 
 
 ​     
