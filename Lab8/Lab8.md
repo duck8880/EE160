@@ -10,77 +10,49 @@
 
 - Common mistakes
 
-  - If you want to test two or more conditions, use ""**&&**"" or "**||**" in **while()** or **if()** statement: 
+  - Properly use ""**&&**"" or "**||**" in the condition in **while()** or **if()** statement: 
 
     ```c
     while(a >= 0 && a <= 10) { ... }
     if (b == 0 || b == 1) { ... }
     ```
 
-  - Pay attention to variable types in expressions: 
+  - We don't have to write the `if (a <= 0)` in the following code : 
 
      ```c
-     int a = 5;
-     int b = 2;
-     float c;
-     c = a / b;				   // c = 2.0 !
-     c = (float)a / (float)b;	// c = 2.5
+     if (a > 0) {
+         // do something
+     } else if (a <= 0) {
+         // do another thing
+     }
      ```
-
-  - "**=**" and "**==**": 
+     Just write like this:
 
      ```c
-     if (a == 1) { ... }
-     // if (a = 1) { ... }	// Wrong!
-     if (1 == a) { ... }
+     if (a > 0) {
+         // do something
+     } else {
+         // do another thing
+     }
      ```
 
-  - Make sure your programs compile and give expected output before submission.
+  - Symbolic link
+
+     A symbolic link is similar to a "shortcut" in Windows. It's a file that contains a reference to another file or directory.
+
+     We can create a symbolic link in the current directory to a file in another directory using:
+
+     ```bash
+     ln -f -s /inst/ee/ee160/ee160/Code.lect/Roman/roman.c .
+     ```
+
+     We can remove a symbolic link roman.c using:
+
+     ```bash
+     unlink roman.c
+     ```
 
 
-
-
-​     
-
-
-## Introduction
-
-- Task: Write a program to find the difference between two dates. 
-
-  Due: **5 Mar 2018 (Monday)**
-
-- Work in teams, and submit only **ONE** set of files per team. **ALL** members of the team should contribute to the homework.
-
-- Write **comments** on your code to describe the **ALGORITHM**. Write **heading comment** in each of your source files: 
-
-  ```c
-  /*     file:    the name of the file
-         by:      the name of the programmer who wrote this file
-         login:   the login id of the programmer who wrote this file
-         date:    the date
-         team:    your team name
-         members: your teammates' names
-  */
-  ```
-
-- Example program provided by Dr. Dobry is located in: 
-
-  ​	`~ee160/Homework/Hw2/datediff`
-
-  Example output: 
-
-  ```bash
-  Enter a start date (dd mm yy) (EOF to quit): 20 2 2018
-  Enter an ending date (dd mm yy): 5 3 2018
-          From 20  2 2018
-          To    5  3 2018
-                  there are 13 days
-  Enter a start date (dd mm yy) (EOF to quit): [Ctrl-D]
-  ```
-
-- Make your program robust (i.e. how well they can tolerate user errors). 
-
-- You should use debugging printf()s to show the values passed in to functions and return value of the functions, as well as some intermediate value and other information when you need. Also use the Conditional Compilation (using #ifdef) for these debug printf()s. Turn off the debugging before submission.  
 
 
 
@@ -88,195 +60,125 @@
 
 ## Tasks
 
-0. Create a new directory **`EE160/Labs/Lab8`** as your working directory.
+- Create a new directory **`EE160/Labs/Lab8`** as your working directory.
 
-   Copy `~ee160/Code.lect/Roman/makefile` to your working directory.
+  Copy `~ee160/Code.lect/Roman/makefile` to your working directory.
 
-1. **Leap Years** (4 Points) (Problem 6 in [section 3.9](http://www-ee.eng.hawaii.edu/~tep/EE160/Book/chap3/section2.1.9.html) of the text).
+  Run `make links` to create symbolic links to the .c and .h files.
 
-   - Write a function:
+  Tasks: 
 
-     ```c
-     int is_leap(int year);
-     ```
+  - We would like the program to be tolerant of white space (spaces and tabs, and still provide the result if all of the other characters are valid roman digits.
+  - If the user enters invalid characters, we would like the function to return 0 as a special value indicating an error instead of a partial result so far.  The driver should **print an error message** when this occurs and let the user try entering another number. 
 
-     which determines if a given year is a leap year. (A year is a leap year if it is divisible by 400; or if it is divisible by 4 and it is not divisible by 100. )
+  Hints:
 
-     Put the code for this function in the file **leap.c** and the prototype for the function in the file **leap.h**.
+  - You may modify any of the files that you need to, but you will need to break the link and copy the file for those you want to change. E.g. if you want to modify roman.c, run the following command:
 
-     Tips: use modular operator **%** to test divisibility.
+    ```bash
+    cp roman.c roman1.c
+    unlink roman.c
+    mv roman1.c roman.c
+    vi roman.c
+    ```
 
-     ```c
-     if (year % 400 == 0) { ... }
-     ```
+  - In **roman.c**, we need to add some code for detecting **spaces**(' '), **tabs**(''\t') and **newlines**('\n').
 
-   - Write a **main()** which repeatedly asks the user to enter a year and prints if it is a leap year or not. **The program terminates when the user enters 0 for the year.** Put the code for the driver in the file **driver1.c**.
+    If we detect invalid character, we need to flush all the following character until the newline character and then return 0. Here is the code for flush the buffer:
 
-   - Compile the program with **make** command, which creates executable **driver1**: 
+    ```c
+    while(getchar()!='\n');
+    ```
+
+  - In **driver.c**, if the return value of  get_roman() is 0, print an error message.
+
+  Sample run:
+
+  ```bash
+  Enter an number in roman numerals(EOF to quit): XI
+  The number is 11
+  Enter an number in roman numerals(EOF to quit):[Tab]X[Space]I
+  The number is 11
+  Enter an number in roman numerals(EOF to quit):[Tab]X123
+  Invalid input, re-enter an number.
+  Enter an number in roman numerals(EOF to quit):[Tab]IX
+  The number is 9
+  Enter an number in roman numerals(EOF to quit):[Ctrl-D]
+  ```
+
+  ​
+
+
+- (5 Points). Compile and run the program found in [readcmd.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab8/readcmd.c). This program accepts single letter commands as input and simply prints out the command it read. Any blanks in front of the command are ignored, as are any characters after the command.
+
+  Sample run:
+
+  ```dash
+  a
+  The command is: a
+  [Space][Space]a
+  The command is: a
+  [Space][Space]and this is a long line
+  The command is: a
+  [Ctrl-D]
+  ```
+
+  Tasks: 
+
+  1. Document **readcmd.c** with comments for the algorithm or for the functions.
+
+  2. Copy the program into **myreadcmd.c**, and extend this file to ignores leading **tabs** ('\t')as well as leading **blanks**(' ') (or any combinations of blanks and tabs). 
+
+     Extend the program to have either a **semi-colon**(';') or a **newline**('\n') character indicate the end of a command. 
+
+     Sample run:
 
      ```bash
-     make driver1
+     a[Space];[Tab]b
+     The command is: a
+     The command is: b
+     [Space]a
+     The command is: a
+     [Ctrl-D]
      ```
-     Example run: 
+
+  3. Extend the program to verify that the command is an **upper** or **lower case** letter. It should print an error message if it isn't. Also, verify that the line has a command: if it hits a blank or ; without an intervening command, you should print an error. 
+
+     Hint: If we get a delimiter (";" or newline) from the skipBlanks(), it means there is missing command before the delimiter, then we need to call skipBlanks() again for finding the next command with out calling the skipOverRestOfCommand() beforehand. 
+
+     Sample run:
 
      ```bash
-     Enter a year: 2018
-     2018 is not a leap year.
-     Enter a year: 2016
-     2016 is a leap year.
-     Enter a year: 2000
-     2000 is a leap year.
-     Enter a year: 1900
-     1900 is not a leap year.
-     Enter a year: 0
+     a[Space];[Tab]b
+     The command is: a
+     The command is: b
+     [Space]+
+     Error: + is not a letter.
+     /
+     Error: / is not a letter.
+     [Enter]
+     Error: missing command.
+     ;[Tab]b
+     Error: missing command.
+     The command is: b
+     [Ctrl-D]
      ```
 
      ​
 
-2. **Days in a Month** (4 Points)
-
-   - Write a function:
-
-     ```c
-     int days_in_month(int month, int year);
-     ```
-
-     which is given a month and year and returns the number of days in that month. You should use your **is_leap()** function as needed to determine the number of days in the month (February has an extra day in leap years). 
-
-     Put the code for the function **days_in_month()** in the file **days.c**, and the prototype in the file **days.h**.
-
-     Tips: Check invalid input (e.g. month < 1 or month > 12). The function can return -1 to indicate the invalid input.
-
-   - Write a driver, **main()**, to ask the user to enter the month and year (**use EOF to terminate the program**) and prints the number of days. Put the driver in the file **driver2.c**.
-
-   - Compile the program with **make** command, which creates executable **driver2**: 
-
-     ```bash
-     make driver2
-     ```
-
-     Example run: 
-
-     ```bash
-     Enter a month and a year (mm yy): 1 2018
-     There are 31 days
-     Enter a month and a year (mm yy): 2 2018
-     There are 28 days
-     Enter a month and a year (mm yy): 4 2018
-     There are 30 days
-     Enter a month and a year (mm yy): 2 2016
-     There are 29 days
-     Enter a month and a year (mm yy): 13 2018
-     Invalid input!
-     Enter a year and a month: [Ctrl-D]
-     ```
-
-3. **Julian Date** (5 Points).
-
-   - Write a function:
-
-     ```c
-     int julian_date(int day, int month, int year);
-     ```
-
-     This function is given the day, month and year and returns the Julian date. The Julian date is the ordinal day number for that day. For example, 1 Jan is day 1 of any year, 31 Dec is day 365 for any non-leap year and 1 Feb is day 32 for any year. 
-
-     Use your **days_in_month()** function from the previous problem to calculate the Julian date. Put the code for the function **julian_date()** in the file **julian.c**, and the prototype in the file **julian.h**.
-
-     Tips: 
-
-     - Check invalid input (e.g. month < 1 or month > 12, or day > total number of days in the current month). You can use **days_in_month()** to check the invalid month if you've already implemented the checking inside that function. The function can return -1 to indicate the invalid input.
-     - Use loop to calculate the sum of the number of days in the previous months. Then return the sum plus the day in the input.
-
-   - Write a driver, **main()**, which asks the user to enter a month, day, year and prints the Julian date. **Terminate with EOF**. Put the driver in the file **driver3.c**.
-
-   - Compile the program with **make** command, which creates executable **driver3**: 
-
-     ```bash
-     make driver3
-     ```
-
-     Example run: 
-
-     ```bash
-     Enter a day, a month and a year (dd mm yy): 1 1 2018
-     The Julian date is: 1
-     Enter a day, a month and a year (dd mm yy): 31 12 2018
-     The Julian date is: 365
-     Enter a day, a month and a year (dd mm yy): 31 12 2016
-     The Julian date is: 366
-     Enter a day, a month and a year (dd mm yy): 10 2 2018
-     The Julian date is: 41
-     Enter a day, a month and a year (dd mm yy): 30 2 2018
-     Invalid input!
-     Enter a day, a month and a year (dd mm yy): [Ctrl-D]
-     ```
-
-     ​
-
-4. **Date Difference** (7 Points).
-
-   - Write just one more driver using the functions you have written so far. The driver is to read a start date and end date and compute the number of days between them. Terminate the program when **EOF** occurs when reading the start date. Implement your algorithm in main() in the file **datediff.c**.  
-     
-     Tips:
-       
-       - *date_diff = julian_date(end_date) + total number of days in the years from the start_year to the (end_year - 1) - julian_date(start_date);*
-          
-         e.g. : Start date: 10 1 2016, End date: 1 2 2018, date_diff = 32 + 366 + 365 - 10 = 753
-         
-         You can calculate the total number of days in one year using julian_date(31, 12, year).
-         
-       - If the end date is earlier than the start date, we can accept the input but swap the two dates.
-     
-   - Compile this program with the command, which will create an executable called **datediff**:
-
-     ```bash
-     make datediff
-     ```
-     
-     Example run: 
-     
-     ```bash
-     Enter a start date (dd mm yy): 1 1 2018
-     Enter a ending date (dd mm yy): 1 2 2018
-             From    1       1       2018
-             To      1       2       2018
-                     there are 31 days
-     Enter a start date (dd mm yy): 10 1 2017
-     Enter a ending date (dd mm yy): 20 1 2018
-             From    10      1       2017
-             To      20      1       2018
-                     there are 375 days
-     Enter a start date (dd mm yy): 20 1 2018
-     Enter a ending date (dd mm yy): 10 1 2017
-             From    20      1       2018
-             To      10      1       2017
-                     there are 375 days
-     Enter a start date (dd mm yy): 1 1 2016
-     Enter a ending date (dd mm yy): 1 2 2018
-             From    1       1       2016
-             To      1       2       2017
-                     there are 762 days
-     Enter a start date (dd mm yy): 1 13 2018
-     Enter a ending date (dd mm yy): 1 1 2018
-             From    1       13      2018
-             To      1       1       2018
-     Invalid input!
-     Enter a start date (dd mm yy): [Ctrl-D]
-     ```
-
-   ​
 
 
 
+## Submission
 
-
-## Turn in
-
-- Submit **ONE** copy of all of the files for this homework per team all at one time.
+- Turn in the all of the source files (.c and .h files) you created using:
 
   `grade -lab8s2,ee160  *.c *.h`  
+
+  Verify your submission using:
+
   `grade -lab8s2,ee160`  
+
 
    ​
 
