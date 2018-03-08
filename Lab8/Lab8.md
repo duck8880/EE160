@@ -122,9 +122,8 @@
     1. If the *rdigit* is EOF, we return EOF.
     2. If the *rdight* is newline('\n'), which means that all the charaters in the input are valid roman numeral except spaces and tabs, we will return the number.
     3. Otherwise, the *rdight* should be an invalid character, and we need to flush all the following character until the newline character and then return 0. Here is the code for flush the buffer:
-
     ```c
-    while(getchar()!='\n');
+        while(getchar()!='\n');
     ```
 
   - In **driver.c**, if the return value of  get_roman() is 0, print an error message.
