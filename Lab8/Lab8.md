@@ -128,13 +128,13 @@
   ```bash
   Enter an number in roman numerals(EOF to quit): XI
   The number is 11
-  Enter an number in roman numerals(EOF to quit):[Tab]X[Space]I
+  Enter an number in roman numerals(EOF to quit): [Tab]X[Space]I
   The number is 11
-  Enter an number in roman numerals(EOF to quit):[Tab]X123
+  Enter an number in roman numerals(EOF to quit): [Tab]X123
   Invalid input, re-enter an number.
-  Enter an number in roman numerals(EOF to quit):[Tab]IX
+  Enter an number in roman numerals(EOF to quit): [Tab]IX
   The number is 9
-  Enter an number in roman numerals(EOF to quit):[Ctrl-D]
+  Enter an number in roman numerals(EOF to quit): [Ctrl-D]
   ```
 
   ​
