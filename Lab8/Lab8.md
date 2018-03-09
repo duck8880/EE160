@@ -180,7 +180,7 @@
 
   3. Extend the program to verify that the command is an **upper** or **lower case** letter. It should print an error message if it isn't. Also, verify that the line has a command: if it hits a blank or ; without an intervening command, you should print an error. 
     
-    Hint: (These hints are the TA's approach, you may find alternative approaches as long as your program works well for the input.)
+     Hint: (These hints are the TA's approach, you may find alternative approaches as long as your program works well for the input.)
      
        There are three situations for the return value of skipBlanks() (cmd):
      
