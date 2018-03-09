@@ -105,7 +105,7 @@
   
   - If the user enters invalid characters, we would like the function to return 0 as a special value indicating an error instead of a partial result so far.  The driver should **print an error message** when this occurs and let the user try entering another number. 
 
-  Hints:
+  Hints: (These hints are the TA's approach, you may find alternative approaches as long as your program works well for the input.)
 
   - You may modify any of the files that you need to, but you will need to break the link and copy the file for those you want to change. E.g. if you want to modify roman.c, run the following command:
 
@@ -180,7 +180,7 @@
 
   3. Extend the program to verify that the command is an **upper** or **lower case** letter. It should print an error message if it isn't. Also, verify that the line has a command: if it hits a blank or ; without an intervening command, you should print an error. 
 
-     Hint: 
+     Hint: (These hints are the TA's approach, you may find alternative approaches as long as your program works well for the input.)
      
        There are three situations for the return value of skipBlanks() (cmd):
      
