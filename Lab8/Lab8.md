@@ -110,10 +110,10 @@
   - You may modify any of the files that you need to, but you will need to break the link and copy the file for those you want to change. E.g. if you want to modify roman.c, run the following command:
 
     ```bash
-  cp roman.c roman1.c
-  unlink roman.c
-  mv roman1.c roman.c
-  vi roman.c
+    cp roman.c roman1.c
+    unlink roman.c
+    mv roman1.c roman.c
+    vi roman.c
     ```
 
   - In **roman.c**, we need to add some code for detecting **spaces**(' '), **tabs**(''\t') in the while loop.
