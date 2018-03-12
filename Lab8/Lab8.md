@@ -84,7 +84,7 @@
   ```
 
 - You can see more details about **char** and **ASCII** code in the following lecture notes.
- 
+
   <http://www-ee.eng.hawaii.edu/cgi-local/mklec.cgi?23+1+EE160/S18>  
   <http://www-ee.eng.hawaii.edu/~tep/EE160/Notes/Chars/char_rep.html>
 
@@ -102,31 +102,33 @@
   Tasks: 
 
   - We would like the program to be tolerant of white space (spaces and tabs), and still provide the result if all of the other characters are valid roman digits.
-  
+
   - If the user enters invalid characters, we would like the function to return 0 as a special value indicating an error instead of a partial result so far.  The driver should **print an error message** when this occurs and let the user try entering another number. 
 
-  Hints: (These hints are the TA's approach, you may find alternative approaches as long as your program works well for the input.)
+  Hints: (These hints are the TA's approach, you may find alternative approaches as long as your program works well for the input.)
 
   - You may modify any of the files that you need to, but you will need to break the link and copy the file for those you want to change. E.g. if you want to modify roman.c, run the following command:
 
     ```bash
-    cp roman.c roman1.c
-    unlink roman.c
-    mv roman1.c roman.c
-    vi roman.c
+  cp roman.c roman1.c
+  unlink roman.c
+  mv roman1.c roman.c
+  vi roman.c
     ```
 
   - In **roman.c**, we need to add some code for detecting **spaces**(' '), **tabs**(''\t') in the while loop.
 
     There may be three situations that the new value of rdigit makes the while loop terminates:
+
     1. If the *rdigit* is EOF, we return EOF.
     2. If the *rdight* is newline('\n'), which means that all the charaters in the input are valid roman numeral except spaces and tabs, we will return the number.
     3. Otherwise, the *rdight* should be an invalid character, and we need to flush all the following character until the newline character and then return 0. Here is the code for flush the buffer:
     ```c
-        while(getchar()!='\n');
+      while(getchar()!='\n');
     ```
 
   - In **driver.c**, if the return value of  get_roman() is 0, print an error message.
+  
 
   Sample run:
 
@@ -147,7 +149,7 @@
 
 - (5 Points). Compile and run the program found in [readcmd.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab8/readcmd.c). This program accepts single letter commands as input and simply prints out the command it read. Any blanks in front of the command are ignored, as are any characters after the command.
 
-  Sample run:
+  Sample run of the original program:
 
   ```bash
   a
