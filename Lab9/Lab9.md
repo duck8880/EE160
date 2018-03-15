@@ -81,7 +81,7 @@
 
   2. Update the body of the **assign_grade()** function so that it returns an appropriate letter grade: 'A' for a score between 90 and 100, 'B' for a score between 80 and 89, 'C' for a score between 70 and 79, 'D' for a score between 60 and 69, and an 'F' for a score between 0 and 59. An out-of-range score (less than 0 or over 100) should result in a '?' being returned for the grade. 
 
-     When testing the program, instead of entering the data manually, you need to try to redirect date in the file [mygrader.dat](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab9/mygrader.dat) (also located on wiliki `~ee160/Labs/Lab9/mygrader.dat`) to the user input by using the command:
+     When testing the program, instead of entering the data manually, you need to try to redirect data in the file [mygrader.dat](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab9/mygrader.dat) (also located on wiliki `~ee160/Labs/Lab9/mygrader.dat`) to the user input by using the command:
 
      ​	`mygrader < mygrader.dat`
 
@@ -136,7 +136,7 @@
 
      That is the first 4 input values are taken as the minimum grade for an A, for a B, for a C, and for a D. Here's an example using the traditional grading scale with input from the file [mygrader2.dat](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab9/mygrader2.dat) (also available on wiliki: `~ee160/Labs/Lab9/mygrader.dat`).
 
-     Add content to the **makefile**, and compile the source files into executable **mygraders** using **make**.
+     Add content to the **makefile**, and compile the source files into executable **mygrader2** using **make**.
 
      **Hint**: It helps to change the assign_grade() function to take the different items of the grading scale as parameters.
 
