@@ -4,11 +4,6 @@
 
 (Lab 8 spec: <http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab9/lab9.html>)
 
-​     
-
-## Notes
-
-- ​
 
 
 
