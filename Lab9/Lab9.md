@@ -60,7 +60,7 @@
 
      - Add comments to your files to properly document the program showing the algorithm, and properly documenting the function and its prototype. 
 
-     - Compile this program using **make** to verify it compiles and runs at this point. Note that you need to eliminate the warnings in the original program.
+     - Compile this program using **make** to verify it compiles and runs at this point. The name of the executable should be **mygrader**. Note that you need to eliminate the warnings in the original program.
 
        Add necessary content to the **makefile**. (You can ignore the error message for mygrader2 and countgrades now.) Refer to the makefile in Lab8: <https://github.com/duck8880/EE160/blob/master/Lab8/Lab8.md>
 
@@ -127,7 +127,7 @@
      -10: illegal score
      ```
 
-  4. Copy your files for this program to new file names and extend this program to read in the grading scale. (Note: don't destroy the source files for mygrader)
+  4. **Copy your files for this program to new file names** and extend this program to read in the grading scale. (Note: The new executable should be **mygrader2**. Don't destroy the source files for mygrader)
 
      That is the first 4 input values are taken as the minimum grade for an A, for a B, for a C, and for a D. Here's an example using the traditional grading scale with input from the file [mygrader2.dat](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab9/mygrader2.dat) (also available on wiliki: `~ee160/Labs/Lab9/mygrader.dat`).
 
