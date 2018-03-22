@@ -129,7 +129,7 @@
 
   4. **Copy your files for this program to new file names** and extend this program to read in the grading scale. (Note: The new executable should be **mygrader2**. Don't destroy the source files for mygrader)
 
-     That is the first 4 input values are taken as the minimum grade for an A, for a B, for a C, and for a D. Here's an example using the traditional grading scale with input from the file [mygrader2.dat](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab9/mygrader2.dat) (also available on wiliki: `~ee160/Labs/Lab9/mygrader.dat`).
+     That is the first 4 input values are taken as the minimum grade for an A, for a B, for a C, and for a D. Here's an example using the traditional grading scale with input from the file [mygrader2.dat](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab9/mygrader2.dat) (also available on wiliki: `~ee160/Labs/Lab9/mygrader2.dat`).
 
      Add content to the **makefile**, and compile the source files into executable **mygrader2** using **make**.
 
