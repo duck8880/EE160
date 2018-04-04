@@ -87,7 +87,9 @@
 
 - Create a new directory **`EE160/Labs/Lab10`** as your working directory.
 
-- (6 Points). **Exploring the "for" and "while" statements. **
+- (6 Points). **Exploring the "for" and "while" statements.**
+
+  - Compile and run the counting program, [counters.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/counters.c) (We can also find it at ~ee160/Labs/Lab10/counters.c). Copy it into a new file counters2.c, and rewrite the program so that it uses only for loops rather than while loops.
   
   
 
