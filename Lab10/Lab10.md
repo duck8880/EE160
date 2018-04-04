@@ -114,7 +114,6 @@
   - Compile and run the counting program, [**counters.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/counters.c) (We can also find it at ~ee160/Labs/Lab10/counters.c). Copy it into a new file **counters2.c**, and rewrite the program so that it uses only for loops rather than while loops.
   
     Sample run:
-    
     ```bash
     1
     2
@@ -145,9 +144,16 @@
     9
     6
     ```
+    
+  - Compile and run the [**avg.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/avg.c) (also at `~ee160/Labs/Lab10/avg.c`). Rewrite it to use a while loop rather than a for.
   
-
-
+    Sample run:
+    ```bash
+    10
+    20
+    35
+    Average of 3 values is 21.666667.
+    ````
 
      ​
 
