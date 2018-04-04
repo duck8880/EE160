@@ -78,6 +78,7 @@
 
     ```
 
+- Be free to ask me if you have any question about the midterm 2.
 
 
 ​     
