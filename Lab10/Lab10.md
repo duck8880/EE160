@@ -77,6 +77,27 @@
             rm -f mygrader mygrader1 countgrades
 
     ```
+    
+  - While loop vs for loop
+    
+    The while loop:
+    ```c
+    i = 1;
+    while (i <= n)
+    { 
+            printf("%d\n", i);
+            i++;
+    }
+    ```
+    
+    is equivalent to the following for loop:
+    ```c
+    for (i = 1; i <= n; i++)
+    {
+            printf("%d\n", i);
+    }
+    ```
+
 
 - Be free to ask me if you have any question about the midterm 2.
 
@@ -89,7 +110,7 @@
 
 - (6 Points). **Exploring the "for" and "while" statements.**
 
-  - Compile and run the counting program, [counters.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/counters.c) (We can also find it at ~ee160/Labs/Lab10/counters.c). Copy it into a new file counters2.c, and rewrite the program so that it uses only for loops rather than while loops.
+  - Compile and run the counting program, [**counters.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/counters.c) (We can also find it at ~ee160/Labs/Lab10/counters.c). Copy it into a new file **counters2.c**, and rewrite the program so that it uses only for loops rather than while loops.
   
     Sample run:
     
