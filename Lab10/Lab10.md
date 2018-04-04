@@ -78,25 +78,25 @@
 
     ```
     
-  - While loop vs for loop
+- While loop vs for loop
     
-    The while loop:
-    ```c
-    i = 1;
-    while (i <= n)
-    { 
-            printf("%d\n", i);
-            i++;
-    }
-    ```
-    
-    is equivalent to the following for loop:
-    ```c
-    for (i = 1; i <= n; i++)
-    {
-            printf("%d\n", i);
-    }
-    ```
+  The while loop:
+  ```c
+  i = 1;
+  while (i <= n)
+  { 
+          printf("%d\n", i);
+          i++;
+  }
+  ```
+  
+  is equivalent to the following for loop:
+  ```c
+  for (i = 1; i <= n; i++)
+  {
+          printf("%d\n", i);
+  }
+  ```
 
 
 - Be free to ask me if you have any question about the midterm 2.
