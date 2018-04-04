@@ -91,6 +91,38 @@
 
   - Compile and run the counting program, [counters.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/counters.c) (We can also find it at ~ee160/Labs/Lab10/counters.c). Copy it into a new file counters2.c, and rewrite the program so that it uses only for loops rather than while loops.
   
+    Sample run:
+    
+    ```bash
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    10
+    9
+    8
+    7
+    6
+    5
+    4
+    3
+    2
+    1
+    5
+    8
+    11
+    14
+    15
+    12
+    9
+    6
+    ```
   
 
 
