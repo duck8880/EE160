@@ -12,7 +12,7 @@
 
   - Properly use ""**&&**"" or "**||**" in the condition in **while()** or **if()** statement: 
   
-    The following two block of code with if statement are equivalent: 
+    The following two blocks of code with if statement are equivalent: 
 
     ```c
     if (A > 100 || A <= B) { 
