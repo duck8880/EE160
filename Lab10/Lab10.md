@@ -59,7 +59,7 @@
 
     E.g. we have driver.c, grader.c and grader.h in our program.
 
-    In driver.c:
+    In grader.c:
 
     ```c
     #include "driver.h"
@@ -74,7 +74,7 @@
     char assign_grade(int score);
     ```
 
-    In grader.c:
+    In driver.c:
 
     ```c
     #include <stdio.h>
