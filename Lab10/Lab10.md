@@ -15,18 +15,18 @@
     The following two block of code with if statement are equivalent: 
 
     ```c
-    if (A <= 100 && A > B) { 
-      // Valid input of grade scale A 
-    } else {
-      // Invalid A
-    }
-    ```
-    or
-    ```c
     if (A > 100 || A <= B) { 
       // Invalid input of grade scale A 
     } else {
       // Valid A
+    }
+    ```
+    or
+    ```c
+    if (A <= 100 && A > B) { 
+      // Valid input of grade scale A 
+    } else {
+      // Invalid A
     }
     ```
     
