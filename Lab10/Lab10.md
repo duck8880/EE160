@@ -268,7 +268,7 @@
      Error!  Can't read number of expected values.
      ```
 
-     Hint: The `scanf()` function will return 0 if it reads no valid value. You can use `break;` to quit a while loop.
+     Hint: The return value of `scanf()` function (not the value of variable inside the `scanf()`) will be 0 if it reads no valid value. You can use `break;` to quit a while loop.
 
   2. If it receives garbage input instead of integers when it is trying to read one of the values it should be averaging but some valid values are read before that, It prints the following error message, print the average of the valid values and quits.
 
