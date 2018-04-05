@@ -214,8 +214,8 @@
     Note: There are some small issues in the program. To get rid of them, do the following things:
 
     1. Create the header file [tfdef.h ](http://www-ee.eng.hawaii.edu/~tep/EE160/Code/Lecture/Stock/tfdef.h) in the working directory.
-    2. Add `#include <ctype.h>` at the beginning of the file. The function `tolower()` is defined there.
-    3. Add the function prototype `int yesOrNo(void);`
+    2. Add `#include <ctype.h>` at the beginning of the .c file. The function `tolower()` is defined there.
+    3. Add the function prototype `int yesOrNo(void);` in the .c file before the main() function.
 
     Sample run:
 
@@ -272,7 +272,7 @@
 
   2. If it receives garbage input instead of integers when it is trying to read one of the values it should be averaging but some valid values are read before that, It prints the following error message, print the average of the valid values and quits.
 
-     Example run:
+     Example run: (The "50" is #0, so the "whatever" should be #2.)
 
      ```bash
      6
