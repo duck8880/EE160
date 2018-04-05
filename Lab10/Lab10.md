@@ -11,11 +11,26 @@
 - Common mistakes
 
   - Properly use ""**&&**"" or "**||**" in the condition in **while()** or **if()** statement: 
+  
+    The following two block of code with if statement are equivalent: 
 
     ```c
-    while(a >= 0 && a <= 10) { ... }
-    if (b == 0 || b == 1) { ... }
+    if (A <= 100 && A > B) { 
+      // Valid input of grade scale A 
+    } else {
+      // Invalid A
+    }
     ```
+    or
+    ```c
+    if (A > 100 || A <= B) { 
+      // Invalid input of grade scale A 
+    } else {
+      // Valid A
+    }
+    ```
+    
+    To give the converse of a statement, we must change "&&" to "||" or vise versa.
 
   - We don't have to write the `if (a <= 0)` in the following code : 
 
