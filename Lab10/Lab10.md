@@ -162,7 +162,7 @@
 
   Note: all the .c files in this problem are available at `~ee160/Labs/Lab10/`. We can copy them into your working directory beforehand.
 
-  - Compile and run the counting program, [**counters.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/counters.c). Copy it into a new file **counters2.c**, and rewrite the program so that it uses only for loops rather than while loops.
+  - Compile and run the counting program, [**counters.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/counters.c). Copy it into a new file **counters2.c**, and rewrite the program so that it uses only **for loops** rather than while loops.
 
     Sample run:
     ```bash
@@ -196,7 +196,7 @@
     6
     ```
 
-  - Compile and run the [**avg.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/avg.c) . Rewrite it to use a while loop rather than a for.
+  - Compile and run the [**avg.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/avg.c) . Rewrite it to use a **while loop** rather than a for.
 
     Sample run:
     ```bash
@@ -207,7 +207,7 @@
     ```
 
 
-  - Compile and run the program [questions.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/questions.c). It reads in a line from the user and determines whether it is a yes or no based on the first character on the line. Rewrite it using "while" loops instead of for loops.
+  - Compile and run the program [questions.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/questions.c). It reads in a line from the user and determines whether it is a yes or no based on the first character on the line. Rewrite it using **"while" loops** instead of for loops.
 
     [questions2.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/questions2.c) is the same program, but with printf statements for debugging. You can also work with questions2.c, but delete all of its debugging statements.
 
