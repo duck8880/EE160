@@ -76,21 +76,23 @@
         }
         ```
 
-      - If your function doesn't work for large *x*, adjust *x* to the range of [0, 2π] using its periodicity.
+      - If your function doesn't work for large *x*, adjust *x* to the range of [0, 2π] using its periodicity. Then your program will work for any angle.
 
         ![Figure](https://mathbitsnotebook.com/Algebra2/TrigGraphs/unitcircle1N.jpg)
 
         `sin(2kπ + x) = sin(x)`
 
-        ​
+    - Values of sin(x)
 
-        ​
+      sin(0) = 0, sin(1) = 0.841471, sin(1.57) = 1.000000, sin(3.14) = 0.001593, sin(6.28) = -0.003185,
+
+      sin(10) = -0.544021, sin(100) = -0.506366, sin(1000) = 0.826880
+
+      sin(-10) = 0.544021,  sin(-100) = 0.506366
 
 
 
-
-
-   ​
+   
 
 ## Submission
 
