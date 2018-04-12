@@ -31,13 +31,13 @@
 
         `double Sin(float)`: Computes the sin of an angle (given in radians) using the Taylor series shown. Loop terminates when the results in the current iteration and the last iteration are close enough, i.e. the series is convergent.
 
-      - util.c, util.h: 
+      - util.c, util.h: (Choose the proper types of arguments and return values by your own)
 
         `factorial()`: Computes the factorial of an given value
 
          `close_enough(double, double)`: Given two doubles and returns true if they are within 0.00005 of each other.
 
-      - exponent.c, exponent.h (from Lab 6 and Hw 4): 
+      - exponent.c, exponent.h (from Lab 6 and Hw 4, you may need to change the data type): 
 
         `pos_power()`
 
