@@ -22,7 +22,7 @@
 
 - (10 Points). **Write a function to evaluate `sin(x)` using the expansion shown below. Use it in a program to find the sine of values read until end of file.**
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=sin(x)&space;=&space;\frac{x^{1}}{1!}&space;-&space;\frac{x^{3}}{3!}&space;&plus;&space;\frac{x^{5}}{5!}&space;-&space;\frac{x^{7}}{7!}&space;&plus;&space;\frac{x^{9}}{9!}&space;-&space;..." target="_blank"><img src="https://latex.codecogs.com/gif.latex?sin(x)&space;=&space;\frac{x^{1}}{1!}&space;-&space;\frac{x^{3}}{3!}&space;&plus;&space;\frac{x^{5}}{5!}&space;-&space;\frac{x^{7}}{7!}&space;&plus;&space;\frac{x^{9}}{9!}&space;-&space;..." title="sin(x) = \frac{x^{1}}{1!} - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \frac{x^{9}}{9!} - ..." /></a>
+    <a href="https://www.codecogs.com/eqnedit.php?latex=sin(x)&space;=&space;\frac{x^{1}}{1!}&space;-&space;\frac{x^{3}}{3!}&space;&plus;&space;\frac{x^{5}}{5!}&space;-&space;\frac{x^{7}}{7!}&space;&plus;&space;\frac{x^{9}}{9!}&space;-&space;..." target="_blank"><img src="https://latex.codecogs.com/gif.latex?sin(x)&space;=&space;\frac{x^{1}}{1!}&space;-&space;\frac{x^{3}}{3!}&space;&plus;&space;\frac{x^{5}}{5!}&space;-&space;\frac{x^{7}}{7!}&space;&plus;&space;\frac{x^{9}}{9!}&space;-&space;..." title="sin(x) = \frac{x^{1}}{1!} - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \frac{x^{9}}{9!} - ..." /></a>
 
 
 ​
