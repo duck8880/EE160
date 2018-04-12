@@ -75,6 +75,7 @@
             scanf("%d", temp);
         }
         ```
+        The program will be paused at the scanf() and continues after you enter an arbitary value.
 
       - If your function doesn't work for large *x*, adjust *x* to the range of [0, 2π] using its periodicity. Then your program will work for any angle.
 
