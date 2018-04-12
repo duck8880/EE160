@@ -2,7 +2,7 @@
 
 (Repo of lab notes: <https://github.com/duck8880/EE160>)
 
-(Lab 8 spec: <http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/lab10.html>)
+(Lab 10 spec: <http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab10/lab10.html>)
 
 ​     
 
