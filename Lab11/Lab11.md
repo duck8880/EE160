@@ -37,7 +37,7 @@
 
          `close_enough(double, double)`: Given two doubles and returns true if they are within 0.00005 of each other.
 
-      - exponent.c, exponent.h (from Lab 6 and Hw 6): 
+      - exponent.c, exponent.h (from Lab 6 and Hw 4): 
 
         `pos_power()`
 
