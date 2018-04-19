@@ -8,12 +8,9 @@
 
 ## Notes
 
-- Data types: Define variables of higher range to represent data with larger value or higher precision
+- The essence of pointers:
 
-  - int: -2,147,483,648 to 2,147,483,647
-  - float: 1.2E-38 to 3.4E+38(6 decimal places)
-  - double: 2.3E-308 to 1.7E+308(15 decimal places)
-- This lab may not be as easy as you thought. Even if your algorithm is correct, you may not get the reasonable result. This is due to the limitations on numeric data types. Take advantage of your debugging skills to fix the problems.
+  http://www-ee.eng.hawaii.edu/cgi-local/mklec.cgi?37+2+EE160/S18
 
 
 ​     
@@ -49,6 +46,7 @@
 
     Run the program and observe the output. On a piece of paper, draw the picture showing the trace of the code and state what the memory addresses are for the three variables, a, b, and c. **You will turn in this paper to the TA before leaving the lab.**
 
+    ```
                                   a             b             c
                             +----------+  +----------+  +----------+
         Initial Values:     |    2.5   |  |    5.9   |  |   12.3   |
@@ -75,8 +73,45 @@
 
     After the 2nd swap:      ......
 
-
     After the 3rd swap:      ......
+    ```
+
+- (3 Points). **Using Pointers**
+
+    Write a function, `swap_big()`, which is given two pointers to floats (a, b) and swaps the values in the cells pointed to such that *a <= *b. The prototype for your function is:
+
+    ```c
+    void swap_big(float *a, float *b);
+    ```
+
+    Your data file, **swapbig.dat**, should show that your function works under all conditions. The file is expected cover the cases of a > b, a < b and a = b.
+
+    Write a driver to allow you to test this function for different pairs of floats when redirected from your data file.  **You should use the swap() function from the previous problem to implement your function.** (I suggest turn off the debugging in swap() function finally.)
+
+    ​
+
+    Essential files for this program: swap.c, swapbig.c, *the driver*, some *.h files*, swapbig.dat
+
+    ​
+
+- (3 Points). **More Pointers and Functions**
+
+    Write a function, `reorder()`, which is given three pointers to floats and reorders the values pointed to into ascending order (i.e. *a <= *b <= *c). The prototype for this function is:
+
+    ```c
+    void reorder(float *a, float *b, float *c);
+    ```
+
+    Use your `swap_big()` function from the previous problem to implement reorder(). Your data file, **reorder.dat**, should show that your function works under all conditions. Write a driver to allow you to test this function for different triplets of floats when redirected from your data file.
+
+    ​
+
+    Hint: You can be inspired from the [**swaptest.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab12/swaptest.c) in the first program. We need to call swap_big() three times to obtain the ascending order of three numbers.
+
+    ​
+
+    Essential files for this program: swap.c, swapbig.c, reorder.c, *the driver*, some *.h files*, reorder.dat
+
 
 
 
