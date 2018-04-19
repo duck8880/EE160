@@ -77,7 +77,7 @@
         ```
         The program will be paused at the scanf() and continues after you enter an arbitary value.
 
-      - If your function doesn't work for large *x*, exploit periodicity of sin to adjust *x* to the range of [0, 2π]. Then your program will work for any angle.
+      - If your function doesn't work for large *x*, exploit the periodicity of sin to adjust *x* to the range of [0, 2π]. Then your program will work for any angle.
 
         ![Figure](https://mathbitsnotebook.com/Algebra2/TrigGraphs/unitcircle1N.jpg)
 
