@@ -1,4 +1,4 @@
-# EE160 Lab 11: Those Dreaded Pointers 
+# EE160 Lab 12: Those Dreaded Pointers 
 
 (Repo of lab notes: <https://github.com/duck8880/EE160>)
 
