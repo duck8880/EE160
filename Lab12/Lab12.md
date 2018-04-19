@@ -86,7 +86,11 @@
 
     Your data file, **swapbig.dat**, should show that your function works under all conditions. The file is expected cover the cases of a > b, a < b and a = b.
 
-    Write a driver to allow you to test this function for different pairs of floats when redirected from your data file.  **You should use the swap() function from the previous problem to implement your function.** (I suggest turn off the debugging in swap() function finally.)
+    Write a driver to allow you to test this function for different pairs of floats when redirected from your data file.  **You should use the swap() function from the previous problem to implement your function.** (I suggest turn off the debugging in swap() function finally.) Run your program using the input redirection command: 
+
+    ```bash
+    swapbig < swapbig.dat
+    ```
 
     ​
 
@@ -102,7 +106,11 @@
     void reorder(float *a, float *b, float *c);
     ```
 
-    Use your `swap_big()` function from the previous problem to implement reorder(). Your data file, **reorder.dat**, should show that your function works under all conditions. Write a driver to allow you to test this function for different triplets of floats when redirected from your data file.
+    Use your `swap_big()` function from the previous problem to implement reorder(). Your data file, **reorder.dat**, should show that your function works under all conditions. Write a driver to allow you to test this function for different triplets of floats when redirected from your data file. Run your program using the input redirection command: 
+
+    ```bash
+    reorder < reorder.dat
+    ```
 
     ​
 
