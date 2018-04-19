@@ -95,7 +95,7 @@
 
     ​
 
-    Essential files for this program: swap.c, swapbig.c, *the driver*, some *.h files*, swapbig.dat
+    Essential files for this program: swap.c, swapbig.c, *the driver for swapbig*, some *.h files*, swapbig.dat
 
     ​
 
@@ -119,7 +119,7 @@
 
     ​
 
-    Essential files for this program: swap.c, swapbig.c, reorder.c, *the driver*, some *.h files*, reorder.dat
+    Essential files for this program: swap.c, swapbig.c, reorder.c, *the driver for reorder*, some *.h files*, reorder.dat
 
 
 
