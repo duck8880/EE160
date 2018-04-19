@@ -12,6 +12,7 @@
 
   http://www-ee.eng.hawaii.edu/cgi-local/mklec.cgi?37+2+EE160/S18
 
+- Don't forget to write your algorithms in comments
 
 ​     
 
