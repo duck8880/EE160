@@ -106,7 +106,7 @@
     void reorder(float *a, float *b, float *c);
     ```
 
-    Use your `swap_big()` function from the previous problem to implement reorder(). Your data file, **reorder.dat**, should show that your function works under all conditions. Write a driver to allow you to test this function for different triplets of floats when redirected from your data file. Run your program using the input redirection command: 
+    Use your `swap_big()` function from the previous problem to implement reorder(). Your data file, **reorder.dat**, should show that your function works under all conditions (e.g. "1 2 3", "1 3 2", "2 1 3", "1 1 2", "2 1 2", ...). Write a driver to allow you to test this function for different triplets of floats when redirected from your data file. Run your program using the input redirection command: 
 
     ```bash
     reorder < reorder.dat
