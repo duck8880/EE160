@@ -2,7 +2,7 @@
 
 (Repo of lab notes: <https://github.com/duck8880/EE160>)
 
-(Lab 13 spec: http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab12/lab12.html)
+(Lab 13 spec: http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab13/lab13.html)
 
 ​     
 
@@ -14,7 +14,9 @@
 
   Your response is important for course improvement. Please feel free to write any comments.
 
-- ​
+- The final deadline for any lab work you would like graded is **Friday, 4 May at 11:59 pm**.
+
+- Tip: You can use FileZilla to upload files to or download files from Wiliki.
 
 ​     
 
@@ -33,48 +35,92 @@
 
 - (4 Points). **Exploring Arrays**
 
-    Write a function, `swap_big()`, which is given two pointers to floats (a, b) and swaps the values in the cells pointed to such that *a <= *b. The prototype for your function is:
-
-    ```c
-    void swap_big(float *a, float *b);
-    ```
-
-    Your data file, **swapbig.dat**, should show that your function works under all conditions. The file is expected cover the cases of a > b, a < b and a = b.
-
-    Write a driver to allow you to test this function for different pairs of floats when redirected from your data file.  **You should use the swap() function from the previous problem to implement your function.** (I suggest turn off the debugging in swap() function finally.) Run your program using the input redirection command: 
+    Compile and run the program [averages.c](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab13/averages.c). Its input and output was supposed to look like the following.
 
     ```bash
-    swapbig < swapbig.dat
+    10 20 30 30 40 50
+    Average of the 6 values read is: 30.000000
+    There are 2 values equal to the average.
+    The values greater than the average:
+    40
+    50
+    The values less than the average:
+    10
+    20
+    ```
+
+    0. Break this code up into .c separate source files with related functions together in a file, and provide the appropriate .h files. Document the files with meaningful comments.
+
+    1. Make it compute the average correctly. 
+
+       Hint: This can be done by rewriting the **tableAverage()** function.
+
+    2. Make it determine the number of equal elements correctly. 
+
+       Hint: This can be done by rewriting the **tableMatchingElements()** function.
+
+    3. Make it print the values greater than or less than equal to the average. The program currently uses tablePrint(), but this prints all elements. 
+
+       Hint: A reasonable approach is to make two new functions **tablePrintIfLarger()** and **tablePrintIfSmaller()** that are like tablePrint(), except that they only print the appropriate subset of array elements.
+
+- (5 Points). **Using Arrays** - a tiny project (**Water Meter Reader**).
+
+    The new digital meters measure water consumed in each household by incrementing a counter for each gallon of water used. Each hour, the controller stores the counter in memory (without resetting it). Every night at midnight the controller sends a file consisting of a time stamp and the counter reading for each hour of the day to the BWS computer over the fiber. A sample of the file is in [day1](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab13/day1).
+
+    Write a program to process these files. The program should read the data file and compute **the water usage for each hour of the day**, **the average hourly usage for the day**, and **the time of the highest hourly usage**.
+
+    ​
+
+    The .c files, .h files. data file and a sample executable can be copied from `~ee160/Code.lect/Water`.
+
+    Run the sample executable by:
+
+    ```
+    water < day1
+    ```
+
+
+    The output is:
+
+    ```
+                     0:00   3
+                     1:00   151
+                     2:00   4
+                     3:00   2
+                     4:00   22
+                     5:00   36
+                     6:00   8
+                     7:00   2
+                     8:00   3
+                     9:00   2
+                    10:00   0
+                    11:00   1
+                    12:00   2
+                    13:00   3
+                    14:00   1
+                    15:00   5
+                    16:00   6
+                    17:00   18
+                    18:00   5
+                    19:00   4
+                    20:00   31
+                    21:00   14
+                    22:00   2
+                    23:00   2
+
+
+    the average usage was 13.625000
+    the hi usage was 151 at 1:00
     ```
 
     ​
 
-    Essential files for this program: swap.c, swapbig.c, *the driver for swap_big()*, some *.h files*, swapbig.dat
+    Your task is to complete this program by writing the function **compute_usage()** in a NEW file **meter.c**. The prototype of the function is already in **meter.h**.
 
-    ​
+    Tips: 
 
-- (5 Points). **Using Arrays** - a tiny project.
-
-    Write a function, `reorder()`, which is given three pointers to floats and reorders the values pointed to into ascending order (i.e. *a <= *b <= *c). The prototype for this function is:
-
-    ```c
-    void reorder(float *a, float *b, float *c);
-    ```
-
-    Use your `swap_big()` function from the previous problem to implement reorder(). Your data file, **reorder.dat**, should show that your function works under all conditions (e.g. "1 2 3", "1 3 2", "2 1 3", "1 1 2", "2 1 2", ...). Write a driver to allow you to test this function for different triplets of floats when redirected from your data file. Run your program using the input redirection command: 
-
-    ```bash
-    reorder < reorder.dat
-    ```
-
-    ​
-
-    Hint: You can be inspired from the [**swaptest.c**](http://www-ee.eng.hawaii.edu/~tep/EE160/Labs/Lab12/swaptest.c) in the first program. We need to call swap_big() three times to obtain the ascending order of three numbers.
-
-    ​
-
-    Essential files for this program: swap.c, swapbig.c, reorder.c, *the driver for reorder()*, some *.h files*, reorder.dat
-
+    - The pointer ***hi_idx** is the array index rather than the highest usage.
+    - Pay attention to that what the last array index should be.
 
 
 
