@@ -55,11 +55,11 @@
 
        Hint: This can be done by rewriting the **tableAverage()** function.
 
-    2. Make it determine the number of equal elements correctly. 
+    2. Make it determine the number of elements equal to the average correctly. 
 
        Hint: This can be done by rewriting the **tableMatchingElements()** function.
 
-    3. Make it print the values greater than or less than equal to the average. The program currently uses tablePrint(), but this prints all elements. 
+    3. Make it print the values greater than or less than the average. The program currently uses tablePrint(), but this prints all elements. 
 
        Hint: A reasonable approach is to make two new functions **tablePrintIfLarger()** and **tablePrintIfSmaller()** that are like tablePrint(), except that they only print the appropriate subset of array elements.
 
@@ -119,7 +119,7 @@
 
     Tips: 
 
-    - The pointer ***hi_idx** is the array index rather than the highest usage.
+    - The pointer ***hi_idx** is pointing to the array index rather than the highest usage.
     - Pay attention to that what the last array index should be.
 
 
